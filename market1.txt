@@ -1,0 +1,619 @@
+      PocUsersVw:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.HIST_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 250 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED_BY 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 401 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED_NAME 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CTE_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_TC_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CLS_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 10 
+        x-table-map: HIST_CLM_CLAIMS.CLM_TYPE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 250 
+        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED_BY 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 401 
+        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED_NAME 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_VERSION 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_STATUS_DATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 4 
+        x-table-map: HIST_CLM_CLAIMS.CLM_MANUAL_SOURCE_CODE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 1 
+        x-table-map: HIST_CLM_CLAIMS.CLM_UNDER_APPEAL_YN 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_PRIORITY 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 150 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CREDITOR_REFERENCE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_NOTIFIED_VALUE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CLAIM_VALUE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 1 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CONTRACT_INTEREST_YN 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 1 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CLAIM_VALUE_TBA_YN 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 12 
+        x-table-map: HIST_CLM_CLAIMS.CLM_IRD_NUMBER 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 1 
+        x-table-map: HIST_CLM_CLAIMS.CLM_INCLUDE_OA_GST_YN 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_OA_GST_AMOUNT 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WAGES_TAX_RATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 4000 
+        x-table-map: HIST_CLM_CLAIMS.CLM_COMMENTS 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_ITS_AWARE_DATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_LODGED_WITH_ITS_DATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_ADMITTED_VALUE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 4000 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_REASON 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 250 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_BY 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 401 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_BY_NAME 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_DATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 3 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CUR_CODE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_WTC_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CTT_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_KCR_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_ONC_ID 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_CLM_CLAIMS.CLM_JOINT_PAID_TO_DATE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 3 
+        x-table-map: HIST_CLM_CLAIMS.CLM_RINGFENCE_TYPE_CODE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 4000 
+        x-table-map: HIST_CLM_CLAIMS.CLM_REASON_FOR_CHANGE 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_LARGE_CLM_FILED_ALERT_SENT 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.CLM_CRED_RPT_SENT 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: HIST_CLM_CLAIMS.ACTION 
+        x-ui-map: UI 
+      HistClmClaims:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 7 
+        x-table-map: HIST_CLM_CLAIMS.AUDITED_DATE 
+        x-ui-map: UI 
+      HistId:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.HIST_ID 
+        x-ui-map: UI 
+      EclId:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ID 
+        x-ui-map: UI 
+      EclClmId:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_CLM_ID 
+        x-ui-map: UI 
+      EclEstateNumber:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ESTATE_NUMBER 
+        x-ui-map: UI 
+      EclPaidToDate:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_PAID_TO_DATE 
+        x-ui-map: UI 
+      EclLastUpdatedBy:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 250 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED_BY 
+        x-ui-map: UI 
+      EclLastUpdatedName:
+        description: >-
+         DESC 
+        type: VARCHAR2 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 401 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED_NAME 
+        x-ui-map: UI 
+      EclLastUpdated:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 7 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED 
+        x-ui-map: UI 
+      EclVersion:
+        description: >-
+         DESC 
+        type: NUMBER 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_VERSION 
+        x-ui-map: UI 
+      EclAdminCompletedAlertSent:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ADMIN_COMPLETED_ALERT_SENT 
+        x-ui-map: UI 
+      EclAdminReOpenedAlertSent:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ADMIN_RE_OPENED_ALERT_SENT 
+        x-ui-map: UI 
+      EclFundsRealisedAlertSent:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_FUNDS_REALISED_ALERT_SENT 
+        x-ui-map: UI 
+      Action:
+        description: >-
+         DESC 
+        type: CHAR 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.ACTION 
+        x-ui-map: UI 
+      AuditedDate:
+        description: >-
+         DESC 
+        type: DATE 
+        example: EXAMPLE 
+        minimum: 0 
+        maximum: 7 
+        x-table-map: HIST_ECL_ESTATE_CLAIMS.AUDITED_DATE 
+        x-ui-map: UI 
+      PocUaId:
+        description: >-
+         I dont know 
+        type: NUMBER 
+        example: Turpenting on the sundhine of the spotless mind on a tuesday swimming with the different whales facing me for life and underneath the brown murky cloud we will see just how many barbecues you can make 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: this.that 
+        x-uc-map: UC 22 
+      PocUaId:
+        description: >-
+         about the sunshine 
+        type: NUMBER 
+        example: fqe 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: af 
+        x-uc-map: fq 
+      PocUaId:
+        description: >-
+         this sis a long story, but \n hard to be trick\n maybe \n \n we will see 
+        type: NUMBER 
+        example: ok 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: find thisn 
+        x-uc-map: 123 
+      ClmId:
+        description: >-
+         fjvfjhv  fjqwjc fpajfm 
+        type: number 
+        example: vfc 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: CLM_CLAIMS.CLM_ID 
+        x-ui-map: ccd .. d 
+        x-uc-map: ewqefj 
+      PocUaId:
+        description: >-
+         wefqf 
+        type: number 
+        example: v 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: wegg 
+        x-uc-map: b 
+      PocUaId:
+        description: >-
+         sfwefd 
+        type: number 
+        example: fqjfj 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: foefihv   oiqfj 
+        x-uc-map: 214r421 
+      PocUaId:
+        description: >-
+         efq 
+        type: number 
+        example: fqwrfqw 
+        minimum: 0 
+        maximum: 22 
+        x-table-map: POC_USERS_VW.POC_UA_ID 
+        x-ui-map: qwrfqwr 
+        x-uc-map: qfqfg 

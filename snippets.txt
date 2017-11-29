@@ -1,0 +1,6 @@
+vv.each do
+nn = nn + 1
+puts nn
+puts vv[nn]
+end
+
