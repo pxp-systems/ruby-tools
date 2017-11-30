@@ -88,6 +88,9 @@ if specific_match == true
  	end
 end 
 
+puts "#{recordCount} columns scanned"
+
+
 
 
 puts "#{recordCount} columns scanned"
