@@ -5,3 +5,110 @@
 =====================
 2017-11-29 17:11:17 +1300
 PocUaId, efq, number, fqwrfqw , 0, 22, POC_USERS_VW.POC_UA_ID,qwrfqwr,qfqfg 
+2017-11-30 08:35:12 +1300, ClmId, The primary key for a claim, number, 2451423 , 0, 22, CLM_CLAIMS.CLM_ID,claims.id,UC221 
+2017-11-30 12:55:40 +1300, ClmId, Primary key, number, 253522 , 0, 22, CLM_CLAIMS.CLM_ID,claims.id,UC22 
+2017-11-30 14:32:48 +1300, CttType, , string,  , 0, 10, CTT_CONTACTS.CTT_TYPE,, 
+2017-11-30 14:32:50 +1300, CttKcrId, , number,  , 1, 22, CTT_CONTACTS.CTT_KCR_ID,, 
+2017-11-30 14:32:40 +1300, CttDontEmailCreditorRptYn, , string,  , 1, 1, CTT_CONTACTS.CTT_DONT_EMAIL_CREDITOR_RPT_YN,, 
+2017-11-30 14:32:43 +1300, CttId, , number,  , 0, 22, CTT_CONTACTS.CTT_ID,, 
+2017-11-30 14:32:35 +1300, CttMainContactYn, n, string,  , 1, 1, CTT_CONTACTS.CTT_MAIN_CONTACT_YN,, 
+2017-11-30 14:32:51 +1300, CttVersion, , number,  , 0, 22, CTT_CONTACTS.CTT_VERSION,, 
+2017-11-30 14:32:53 +1300, CttCreated, , string,  , 0, 7, CTT_CONTACTS.CTT_CREATED,, 
+2017-11-30 14:32:54 +1300, CttCreatedBy, , string,  , 0, 250, CTT_CONTACTS.CTT_CREATED_BY,, 
+2017-11-30 14:33:08 +1300, CttCreatedName, , string,  , 0, 401, CTT_CONTACTS.CTT_CREATED_NAME,, 
+2017-12-01 10:07:28 +1300, CssId, , string,  , 0, 240, CSS_CLIENT_SESSION_STATES.CSS_ID,, 
+2017-12-01 10:07:30 +1300, CssModifiedDate, , string,  , 0, 7, CSS_CLIENT_SESSION_STATES.CSS_MODIFIED_DATE,, 
+2017-12-01 10:07:31 +1300, CssValue, , object,  , 0, 4000, CSS_CLIENT_SESSION_STATES.CSS_VALUE,, 
+2017-12-06 09:32:48 +1300, CttMainContactYn, Is this the primary contact record?, string, False , 1, 1, CTT_CONTACTS.CTT_MAIN_CONTACT_YN,Contact.Main Contact,PE 
+2017-12-06 09:33:54 +1300, CttDontEmailCreditorRptYn, Boolean indicated whether emails of credit reports need to be surpressed., string, false , 1, 1, CTT_CONTACTS.CTT_DONT_EMAIL_CREDITOR_RPT_YN,Contact.Email Creditor Report,PE 
+2017-12-06 09:34:40 +1300, CttId, Primary key and unique identifier of a creditor, number, 1624392 , 0, 22, CTT_CONTACTS.CTT_ID,Contact ID,PE 
+2017-12-06 09:45:45 +1300, CttType, The type of contact - human or organisation., string, A Person , 0, 10, CTT_CONTACTS.CTT_TYPE,Only displayed on creation.,PE 
+2017-12-06 09:47:17 +1300, CttKcrId, ??, number, ? , 1, 22, CTT_CONTACTS.CTT_KCR_ID,?,PE 
+2017-12-06 09:48:17 +1300, CttVersion, The version of the contact record, number, 12 , 0, 22, CTT_CONTACTS.CTT_VERSION,Not displayed,PE 
+2017-12-06 09:50:07 +1300, CttCreated, The date time that the contact was created, string, 2-Sept-2014 10:33 , 0, 7, CTT_CONTACTS.CTT_CREATED,not displayed,PE 
+2017-12-06 09:50:51 +1300, CttCreatedBy, The user that created the contact, string, Basil Brush , 0, 250, CTT_CONTACTS.CTT_CREATED_BY,not displayed,PE 
+2017-12-06 09:51:17 +1300, CttCreatedName, The user that created the contact., string, Basil Brush , 0, 401, CTT_CONTACTS.CTT_CREATED_NAME,not displaed,PE 
+2017-12-06 09:51:58 +1300, CttLastUpdated, The date time that the contact was last updated, string, 12-Dec-2017 9:52 , 0, 7, CTT_CONTACTS.CTT_LAST_UPDATED,not displayed,PE 
+2017-12-06 09:52:37 +1300, CttLastUpdatedBy, The user that last updated the contact record, string, Spongebob Squarepants , 0, 250, CTT_CONTACTS.CTT_LAST_UPDATED_BY,not displayed,PE 
+2017-12-06 09:53:18 +1300, CttLastUpdatedName, The user that last updated the contact record., string, Amelia Airhart , 0, 401, CTT_CONTACTS.CTT_LAST_UPDATED_NAME,Amelia Airhart,PE 
+2017-12-06 09:54:22 +1300, CttAddressKnownYn, Boolean indicating whether there is an address known for this contact, string, true , 0, 1, CTT_CONTACTS.CTT_ADDRESS_KNOWN_YN,not displayed,PE 
+2017-12-06 09:54:57 +1300, CttInUseYn, Boolean indicating if the contact is associated to an estate, string, true , 0, 1, CTT_CONTACTS.CTT_IN_USE_YN,not dispaled,PE 
+2017-12-06 09:55:48 +1300, CttWithholdAddressYn, Indication that address detains should be withheld (on the regster?), string, false , 0, 1, CTT_CONTACTS.CTT_WITHHOLD_ADDRESS_YN,Contact.WIthhold Address Details,PE 
+2017-12-06 09:56:28 +1300, CttProtectFromEditYn, Boolean indicating whether the cotnact record should be locked from editing (by?), string, false , 0, 1, CTT_CONTACTS.CTT_PROTECT_FROM_EDIT_YN,Contact.Protect From Edit,PE 
+2017-12-06 09:57:04 +1300, CttDeceasedYn, Boolean indicating whether the contact is known to be decieased., string, false , 1, 1, CTT_CONTACTS.CTT_DECEASED_YN,,PE 
+2017-12-06 10:07:51 +1300, CttDateOfBirth, The persons date of birth, string, 17-Feb-1978 , 1, 7, CTT_CONTACTS.CTT_DATE_OF_BIRTH,Contact.Details,PE 
+2017-12-11 11:18:15 +1300, OncCreditorEmail, The email address of the claimant, string, sam@example.com , 1, 500, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL,claim.Correspondence Address,PE 
+2017-12-11 11:19:36 +1300, OncId, The primary identifier of a claim application, number, 701545 , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID,Not displayed,PE 
+2017-12-11 11:58:31 +1300, OncCreditorEmail, , string,  , 1, 500, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL,,,Permissions[update[]] 
+2017-12-11 11:58:39 +1300, OncId, , number,  , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID,,,Permissions[update[]] 
+2017-12-11 12:01:23 +1300, OncCreditorEmail, The creditor's email address., string, sam@example.com , 1, 500, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL,Claim.Correspondence address,PE,Permissions 
+2017-12-11 12:02:27 +1300, OncId, The unique identifier for a claim application., number, 699050 , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID,Not displayed,PE,Permissions 
+2017-12-11 12:04:47 +1300, OncCreditorReference, The creditor's reference to be used for this claim application., string, 140154-54 , 1, 200, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_REFERENCE,Claim Application. Your Reference / Account Number,PE,Permissions 
+2017-12-11 12:06:25 +1300, OncThreeMonthlyYn, Notfication options, string, True , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_THREE_MONTHLY_YN,Claim Application. Notificaton Options.Notify every three months,PE,Permissions 
+2017-12-11 12:06:44 +1300, OncSixMonthlyYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SIX_MONTHLY_YN,,,Permissions 
+2017-12-11 12:06:56 +1300, OncEstateAdminCompleteYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_COMPLETE_YN,,,Permissions 
+2017-12-11 12:09:31 +1300, OncEstateAdminReOpenedYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_RE_OPENED_YN,,,Permissions 
+2017-12-11 12:10:03 +1300, OncCreditorEmail, , string,  , 1, 500, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL,,, 
+2017-12-11 12:10:57 +1300, OncCreditorEmail, , string,  , 1, 500, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL,,, 
+2017-12-11 12:11:08 +1300, OncId, , number,  , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID,,, 
+2017-12-11 12:11:09 +1300, OncCreditorReference, , string,  , 1, 200, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_REFERENCE,,, 
+2017-12-11 12:11:10 +1300, OncThreeMonthlyYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_THREE_MONTHLY_YN,,, 
+2017-12-11 12:11:12 +1300, OncSixMonthlyYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SIX_MONTHLY_YN,,, 
+2017-12-11 12:11:14 +1300, OncEstateAdminCompleteYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_COMPLETE_YN,,, 
+2017-12-11 12:11:18 +1300, OncEstateAdminReOpenedYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_RE_OPENED_YN,,, 
+2017-12-11 12:11:27 +1300, OncRealisationOfFundsYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_REALISATION_OF_FUNDS_YN,,, 
+2017-12-11 12:11:33 +1300, OncOutstandingAmountSecYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUTSTANDING_AMOUNT_SEC_YN,,, 
+2017-12-11 12:11:41 +1300, OncFilingClaimLrgeClaimYn, , string,  , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_FILING_CLAIM_LRGE_CLAIM_YN,,, 
+2017-12-11 12:22:30 +1300, OncAdjudicationAppCostsYn, Boolean used to determine the ultimate claim type & priority., string, false , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ADJUDICATION_APP_COSTS_YN,Claim Application.1,PE,r-creditor 
+2017-12-11 12:25:01 +1300, OncWagesHolidayPayYn, , string, false , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_HOLIDAY_PAY_YN,Claim Application.2,PE,r-creditor 
+2017-12-11 12:26:04 +1300, OncUnpaidTaxesLeviesYn, Boolean used to determine the claim type & priority., string, true , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_UNPAID_TAXES_LEVIES_YN,Claim Application.3,PE,r-creditor 
+2017-12-11 12:28:39 +1300, OncOutstdingAmountNoSecYn, Boolean used to determine the claim type and priority., string, fales , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUTSTDING_AMOUNT_NO_SEC_YN,Claim Application.4,PE,r-creditor, r-debtor 
+2017-12-11 13:15:22 +1300, OncSubjectToCourtActionYn, Boolean indicating whether the claim is subject to court action, sed to determine the claim type and priority., string, false , 0, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SUBJECT_TO_COURT_ACTION_YN,Claim Application.6,PE,r-creditor 
+2017-12-11 13:23:30 +1300, OncCreatedBy, The userID that created the claim application., string, EXUSR123 , 0, 250, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_BY,Not displayed,PE, 
+2017-12-11 13:25:34 +1300, OncCreatedName, The full name of the user that created the record. Cannot be specified by the user - must come from the logged in account., string, Basil Brush , 0, 401, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_NAME,Claim Application.Creditor,PE,r-creditor 
+2017-12-11 13:27:00 +1300, OncCreatedDate, The DateTime the claim application was created - cannot e specified in the request, comes from the header information., string, 11-Dec-2017 13:26 , 0, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_DATE,Not displayed,PE,r-creditor 
+2017-12-11 13:28:23 +1300, OncLastUpdatedBy, The last user to update the claim application record., string, 11-Dec-2017 13:44 , 0, 250, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED_BY,Not displayed,PE,r-creditor 
+2017-12-11 13:31:14 +1300, OncLastUpdatedName, The full name of the user that last updated the claim application record, Cannot be specified but comes through from the logged in user., string, Example User , 0, 401, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED_NAME,Not displayed.,PE,r-creditor 
+2017-12-11 13:32:30 +1300, OncLastUpdated, The userid of the user that last updated the record - effectively an audit trail., string, EXUSER234 , 0, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED,Not displayed.,PE,r-creditor 
+2017-12-11 13:43:44 +1300, OncVersion, The version number of the claim application., number, 4 , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_VERSION,Not displayed.,PE.Deprecate?,r-creditor 
+2017-12-11 13:47:01 +1300, OncPersonEnteringApp, If the claim is not filed be the actual claimant, the name of the peroson completeing the applciation. Note: this seems redundant as we already know who is logged in. Shouldn't it be name of acoutual claimant?, string, Sybil Fawlty , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_PERSON_ENTERING_APP,Claim Application.Person Completing this application.,PE,r-creditor, r-creditor-agent 
+2017-12-11 13:53:06 +1300, OncDesignation, Unknown. Appears to be roles, But also free text. Hard to say where this comes from., string, Legal Executive , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_DESIGNATION,Not displayed.,PE,r-creditor, r-creditor-agent, r-insolvency-officer 
+2017-12-11 13:56:17 +1300, OncAppAmountClaimed, The ammount claimed in relation to any adjudication / application costs for the estate, number, 10797.32 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_AMOUNT_CLAIMED,Claim Application.1.Amount claimed,PE,r-creditor. r-creditor-agent, r-insolvency-officer 
+2017-12-11 13:58:25 +1300, OncAppAmountInWords, The amount claimed, in words. Used as a checksum., string, Ten thousand, seven hundred and ninety seven dollars and thrirty two cents. , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_AMOUNT_IN_WORDS,,PE.Deprecate?,r-creditor, r-creditor-agent, r-insolvency-officer 
+2017-12-11 15:13:31 +1300, OncAppEvidenceCode, Enum - how the evidence was provided. POS, FAX or DRM. Relating to Postal, Online attachment or Fax evidence., string, FAX , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_EVIDENCE_CODE,Claim Application.1.Evidence.Code (Radio Buttons),PE.Deprecated?,r-creditor, r-creditor-agent, r-insolvency-officer 
+2017-12-11 15:13:43 +1300, OncWagesAmountClaimed, , number,  , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_AMOUNT_CLAIMED,,, 
+2017-12-11 15:13:47 +1300, OncWagesAmountInWords, , string,  , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_AMOUNT_IN_WORDS,,, 
+2017-12-11 15:16:04 +1300, OncWagesFromDate, The start for the time period for which wages are claimed., string, 23-Nov-2014 , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_FROM_DATE,Claim Application.2.From,PE,r-c!, r-c-a!, i-a! 
+2017-12-11 15:17:26 +1300, OncWagesToDate, The end date for the tme period for which wages are claimed., string, 2-June-2015 , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_TO_DATE,Claim Application.2.To,PE,r-c!, r-c-a! 
+2017-12-11 15:21:19 +1300, OncWagesDescription, Description of the circumsances & particulars for the wages claim., string, This claim is for unpaid wages annual leave nad time in leiu of notice. , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_DESCRIPTION,r-c!, r-c-a!,PE,r-c! 
+2017-12-11 15:22:45 +1300, OncWagesEvidenceCode, Enum:, string, FAX , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_EVIDENCE_CODE,Claim Application.2.Evidence,PE,r-c!, r-c-a! 
+2017-12-11 15:24:25 +1300, OncTaxesAmountClaimed, The amount claimed in relation to wages., number, 3000 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_AMOUNT_CLAIMED,Claim Application.2,Amount,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:25:26 +1300, OncTaxesAmountInWords, The amount claimed in realtion to taxes owed, in words., string,  , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_AMOUNT_IN_WORDS,,PE.Deprecated, 
+2017-12-11 15:27:28 +1300, OncTaxesGstContent, The GST content of the taxes owed., number, 630 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_GST_CONTENT,Claim Application.3.GST Content,PE,r-c!, r-c-a! 
+2017-12-11 15:28:40 +1300, OncTaxesFromDate, The start date to which the tax claim relates., string, 23-Jun-2012 , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_FROM_DATE,Claim Application.3.Start,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:29:50 +1300, OncTaxesToDate, THe end date to which the tax claim relates., string, 3-Dec-2012 , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_TO_DATE,Claim Application.3.End,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:31:33 +1300, OncTaxesDescription, A description of the Tax claim., string, ACC Levies. , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_DESCRIPTION,Claim Application.3.Description,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:32:39 +1300, OncTaxesEvidenceCode, Enum:, string, DRM , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_EVIDENCE_CODE,Claim Application.3.Evidence,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:34:07 +1300, OncOutAmountClaimed, The amount claimed for other tpes of debt., number, 9000 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_AMOUNT_CLAIMED,Claim Application.4,Amount Claimed,PE,r-c, 
+2017-12-11 15:39:52 +1300, OncOutAmountInWords, T, string,  , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_AMOUNT_IN_WORDS,,PE.Deprecated, 
+2017-12-11 15:41:18 +1300, OncOutGstContent, The GST content of claims under other in the claim application., number, 222.14 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_GST_CONTENT,Claim Application.4.CST Content,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:43:07 +1300, OncOutFromDate, The srart date for claims under other., string, 23-Jul-2014 , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_FROM_DATE,Claim Application.4.From,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:44:07 +1300, OncOutToDate, The end datae for claims under other., string, PE , 1, 7, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_TO_DATE,Claim Application.4.To,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 15:49:44 +1300, OncOutDescription, Description of claims nder other., string, Giftware products (fairies, dragons etc). , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_DESCRIPTION,Claim Applitcation.4.Description,PE,r-c!, r-c-a! r-i-o 
+2017-12-11 15:57:42 +1300, OncOutEvidenceCode, Enum, string, DRM , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_EVIDENCE_CODE,,PE, 
+2017-12-11 15:59:56 +1300, OncSecValue, The value of securities claimed as part of the application., number, 222000 , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_VALUE,Claim Application,5.Value of securities,PE,r-c!, r-c-a, r-i-o 
+2017-12-11 16:00:09 +1300, OncSecValueInWords, , string,  , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_VALUE_IN_WORDS,,PE.Deprecated, 
+2017-12-11 16:03:18 +1300, OncSecDescription, Description of the securities claimed in the application., string, 42 Trevone Place, Forrest Hill, Auckland , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_DESCRIPTION,Claim Application,5,Description,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 16:03:25 +1300, OncSecEvidenceCode, , string,  , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_EVIDENCE_CODE,,, 
+2017-12-11 16:05:54 +1300, OncCourtActionDescription, Description of any court actions relation to any of the claims in the application., string, Judgement by default. Sealed on 10th June 2012. , 1, 400, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COURT_ACTION_DESCRIPTION,Claim Application..6.Description,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 16:06:13 +1300, OncCoutActionCode, , string,  , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COUT_ACTION_CODE,,, 
+2017-12-11 16:07:18 +1300, OncCourtActionEvidence, The link to the evidence of court action supplied with the applciation., string, DRM , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COURT_ACTION_EVIDENCE,,PE, 
+2017-12-11 16:16:17 +1300, OncClaimIncludeInterestYn, Boolean indicating whether the application includes court awarded interest or interest agreed in a contract., string, true , 1, 1, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CLAIM_INCLUDE_INTEREST_YN,Claim Application.7,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 16:21:24 +1300, OncInterestEvidenceCode, Enum, string,  , 1, 240, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_INTEREST_EVIDENCE_CODE,,, 
+2017-12-11 16:23:02 +1300, OncCurCode, Currency code for??, string, NZD , 1, 3, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE,??,PE,r-c!, r-c-a!, r-i-o 
+2017-12-11 16:24:21 +1300, OncCurCodeTaxes, Currency code for claims relating to tax., string, NZD , 1, 3, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_TAXES,Claim Application.3.Currency,PE,r3! 
+2017-12-11 16:25:31 +1300, OncCurCodeSecurity, Currency code for amounts relating to securities claimed., string, AUD , 1, 3, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_SECURITY,Claim Application.5.Currency,PE,r3! 
+2017-12-11 16:29:19 +1300, OncCurCodeOutstanding, Currency code relating to amounts clamed under other., string, USD , 1, 3, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_OUTSTANDING,Claim Applicaton.4.Currency,PE,r3! 
+2017-12-11 16:31:25 +1300, OncCttId, The unique contact ID relating to the account that created the claim., number, 1085214 , 0, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CTT_ID,Not applicable,PE,r3! 
+2017-12-11 16:32:12 +1300, OncKcrId, The key creditor id - MAP AS A MULTIPLE TO ABOVE RECORD, number,  , 1, 22, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_KCR_ID,,, 
+2017-12-11 16:34:24 +1300, OncCurCodeApp, The currency code for adjucicated or application costs., string, NZD , 1, 3, ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_APP,Claim Applciation.1.Currency,PE,r3! 

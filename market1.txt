@@ -1,619 +1,813 @@
-      PocUsersVw:
+      OncCreditorEmail:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+         The email address of the claimant 
+        type: string 
+        example: sam@example.com 
+        minimum: 1 
+        maximum: 500 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL 
+        x-ui-map: claim.Correspondence Address 
+        x-uc-map: PE 
+      OncId:
+        description: >-
+         The primary identifier of a claim application 
+        type: number 
+        example: 701545 
         minimum: 0 
         maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID 
+        x-ui-map: Not displayed 
+        x-uc-map: PE 
+      OncCreditorEmail:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 500 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL 
+        x-ui-map:  
+        x-uc-map:         x-read-per: Permissions[update[]] 
+      OncId:
+        description: >-
+          
+        type: number 
+        example:  
         minimum: 0 
         maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.HIST_ID 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID 
+        x-ui-map:  
+        x-uc-map:         x-read-per: Permissions[update[]] 
+      OncCreditorEmail:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+         The creditor's email address. 
+        type: string 
+        example: sam@example.com 
+        minimum: 1 
+        maximum: 500 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL 
+        x-ui-map: Claim.Correspondence address 
+        x-uc-map: PE        x-read-per: Permissions 
+      OncId:
+        description: >-
+         The unique identifier for a claim application. 
+        type: number 
+        example: 699050 
         minimum: 0 
         maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_ID 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID 
+        x-ui-map: Not displayed 
+        x-uc-map: PE        x-read-per: Permissions 
+      OncCreditorReference:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The creditor's reference to be used for this claim application. 
+        type: string 
+        example: 140154-54 
+        minimum: 1 
+        maximum: 200 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_REFERENCE 
+        x-ui-map: Claim Application. Your Reference / Account Number 
+        x-uc-map: PE        x-read-per: Permissions 
+      OncThreeMonthlyYn:
+        description: >-
+         Notfication options 
+        type: string 
+        example: True 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_THREE_MONTHLY_YN 
+        x-ui-map: Claim Application. Notificaton Options.Notify every three months 
+        x-uc-map: PE        x-read-per: Permissions 
+      OncSixMonthlyYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SIX_MONTHLY_YN 
+        x-ui-map:  
+        x-uc-map:         x-read-per: Permissions 
+      OncEstateAdminCompleteYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_COMPLETE_YN 
+        x-ui-map:  
+        x-uc-map:         x-read-per: Permissions 
+      OncEstateAdminReOpenedYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_RE_OPENED_YN 
+        x-ui-map:  
+        x-uc-map:         x-read-per: Permissions 
+      OncCreditorEmail:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 500 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL 
+        x-ui-map:  
+        x-uc-map:         x-permissions:  
+      OncCreditorEmail:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 500 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_EMAIL 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncId:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 0 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ID 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncCreditorReference:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 200 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREDITOR_REFERENCE 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncThreeMonthlyYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_THREE_MONTHLY_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncSixMonthlyYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SIX_MONTHLY_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncEstateAdminCompleteYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_COMPLETE_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncEstateAdminReOpenedYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ESTATE_ADMIN_RE_OPENED_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncRealisationOfFundsYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_REALISATION_OF_FUNDS_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncOutstandingAmountSecYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUTSTANDING_AMOUNT_SEC_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncFilingClaimLrgeClaimYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_FILING_CLAIM_LRGE_CLAIM_YN 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncAdjudicationAppCostsYn:
+        description: >-
+         Boolean used to determine the ultimate claim type & priority. 
+        type: string 
+        example: false 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_ADJUDICATION_APP_COSTS_YN 
+        x-ui-map: Claim Application.1 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncWagesHolidayPayYn:
+        description: >-
+          
+        type: string 
+        example: false 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_HOLIDAY_PAY_YN 
+        x-ui-map: Claim Application.2 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncUnpaidTaxesLeviesYn:
+        description: >-
+         Boolean used to determine the claim type & priority. 
+        type: string 
+        example: true 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_UNPAID_TAXES_LEVIES_YN 
+        x-ui-map: Claim Application.3 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncOutstdingAmountNoSecYn:
+        description: >-
+         Boolean used to determine the claim type and priority. 
+        type: string 
+        example: fales 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUTSTDING_AMOUNT_NO_SEC_YN 
+        x-ui-map: Claim Application.4 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-debtor 
+      OncSubjectToCourtActionYn:
+        description: >-
+         Boolean indicating whether the claim is subject to court action, sed to determine the claim type and priority. 
+        type: string 
+        example: false 
+        minimum: 0 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SUBJECT_TO_COURT_ACTION_YN 
+        x-ui-map: Claim Application.6 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncCreatedBy:
+        description: >-
+         The userID that created the claim application. 
+        type: string 
+        example: EXUSR123 
         minimum: 0 
         maximum: 250 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED_BY 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_BY 
+        x-ui-map: Not displayed 
+        x-uc-map: PE 
+        x-permissions:  
+      OncCreatedName:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The full name of the user that created the record. Cannot be specified by the user - must come from the logged in account. 
+        type: string 
+        example: Basil Brush 
         minimum: 0 
         maximum: 401 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED_NAME 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_NAME 
+        x-ui-map: Claim Application.Creditor 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncCreatedDate:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CTE_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_TC_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CLS_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 10 
-        x-table-map: HIST_CLM_CLAIMS.CLM_TYPE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         The DateTime the claim application was created - cannot e specified in the request, comes from the header information. 
+        type: string 
+        example: 11-Dec-2017 13:26 
         minimum: 0 
         maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CREATED 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CREATED_DATE 
+        x-ui-map: Not displayed 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncLastUpdatedBy:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The last user to update the claim application record. 
+        type: string 
+        example: 11-Dec-2017 13:44 
         minimum: 0 
         maximum: 250 
-        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED_BY 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED_BY 
+        x-ui-map: Not displayed 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncLastUpdatedName:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The full name of the user that last updated the claim application record, Cannot be specified but comes through from the logged in user. 
+        type: string 
+        example: Example User 
         minimum: 0 
         maximum: 401 
-        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED_NAME 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED_NAME 
+        x-ui-map: Not displayed. 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncLastUpdated:
         description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         The userid of the user that last updated the record - effectively an audit trail. 
+        type: string 
+        example: EXUSER234 
         minimum: 0 
         maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_LAST_UPDATED 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_LAST_UPDATED 
+        x-ui-map: Not displayed. 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncVersion:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+         The version number of the claim application. 
+        type: number 
+        example: 4 
         minimum: 0 
         maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_VERSION 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_VERSION 
+        x-ui-map: Not displayed. 
+        x-uc-map: PE.Deprecate? 
+        x-permissions: r-creditor 
+      OncPersonEnteringApp:
         description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         If the claim is not filed be the actual claimant, the name of the peroson completeing the applciation. Note: this seems redundant as we already know who is logged in. Shouldn't it be name of acoutual claimant? 
+        type: string 
+        example: Sybil Fawlty 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_PERSON_ENTERING_APP 
+        x-ui-map: Claim Application.Person Completing this application. 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent 
+      OncDesignation:
+        description: >-
+         Unknown. Appears to be roles, But also free text. Hard to say where this comes from. 
+        type: string 
+        example: Legal Executive 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_DESIGNATION 
+        x-ui-map: Not displayed. 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncAppAmountClaimed:
+        description: >-
+         The ammount claimed in relation to any adjudication / application costs for the estate 
+        type: number 
+        example: 10797.32 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_AMOUNT_CLAIMED 
+        x-ui-map: Claim Application.1.Amount claimed 
+        x-uc-map: PE 
+        x-permissions: r-creditor. r-creditor-agent, r-insolvency-officer 
+      OncAppAmountInWords:
+        description: >-
+         The amount claimed, in words. Used as a checksum. 
+        type: string 
+        example: Ten thousand, seven hundred and ninety seven dollars and thrirty two cents. 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_AMOUNT_IN_WORDS 
+        x-ui-map:  
+        x-uc-map: PE.Deprecate? 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncAppEvidenceCode:
+        description: >-
+         Enum - how the evidence was provided. POS, FAX or DRM. Relating to Postal, Online attachment or Fax evidence. 
+        type: string 
+        example: FAX 
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_APP_EVIDENCE_CODE 
+        x-ui-map: Claim Application.1.Evidence.Code (Radio Buttons) 
+        x-uc-map: PE.Deprecated? 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncWagesAmountClaimed:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 1 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_AMOUNT_CLAIMED 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncWagesAmountInWords:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_AMOUNT_IN_WORDS 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncWagesFromDate:
+        description: >-
+         The start for the time period for which wages are claimed. 
+        type: string 
+        example: 23-Nov-2014 
         minimum: 1 
         maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_STATUS_DATE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_FROM_DATE 
+        x-ui-map: Claim Application.2.From 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncWagesToDate:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 4 
-        x-table-map: HIST_CLM_CLAIMS.CLM_MANUAL_SOURCE_CODE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 1 
-        x-table-map: HIST_CLM_CLAIMS.CLM_UNDER_APPEAL_YN 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_PRIORITY 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 150 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CREDITOR_REFERENCE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_NOTIFIED_VALUE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CLAIM_VALUE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 1 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CONTRACT_INTEREST_YN 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 1 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CLAIM_VALUE_TBA_YN 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 12 
-        x-table-map: HIST_CLM_CLAIMS.CLM_IRD_NUMBER 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 1 
-        x-table-map: HIST_CLM_CLAIMS.CLM_INCLUDE_OA_GST_YN 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_OA_GST_AMOUNT 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WAGES_TAX_RATE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 4000 
-        x-table-map: HIST_CLM_CLAIMS.CLM_COMMENTS 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         The end date for the tme period for which wages are claimed. 
+        type: string 
+        example: 2-June-2015 
         minimum: 1 
         maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_ITS_AWARE_DATE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_TO_DATE 
+        x-ui-map: Claim Application.2.To 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent 
+      OncWagesDescription:
         description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         Description of the circumsances & particulars for the wages claim. 
+        type: string 
+        example: This claim is for unpaid wages annual leave nad time in leiu of notice. 
         minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_LODGED_WITH_ITS_DATE 
-        x-ui-map: UI 
-      HistClmClaims:
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_DESCRIPTION 
+        x-ui-map: r-creditor, r-creditor-agent 
+        x-uc-map: PE 
+        x-permissions: r-creditor 
+      OncWagesEvidenceCode:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+         Enum: 
+        type: string 
+        example: FAX 
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_WAGES_EVIDENCE_CODE 
+        x-ui-map: Claim Application.2.Evidence 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent 
+      OncTaxesAmountClaimed:
+        description: >-
+         The amount claimed in relation to wages. 
+        type: number 
+        example: 3000 
         minimum: 1 
         maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_ADMITTED_VALUE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_AMOUNT_CLAIMED 
+        x-ui-map: Claim Application.2,Amount 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncTaxesAmountInWords:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The amount claimed in realtion to taxes owed, in words. 
+        type: string 
+        example:  
         minimum: 1 
-        maximum: 4000 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_REASON 
-        x-ui-map: UI 
-      HistClmClaims:
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_AMOUNT_IN_WORDS 
+        x-ui-map:  
+        x-uc-map: PE.Deprecated 
+        x-permissions:  
+      OncTaxesGstContent:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         The GST content of the taxes owed. 
+        type: number 
+        example: 630 
         minimum: 1 
-        maximum: 250 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_BY 
-        x-ui-map: UI 
-      HistClmClaims:
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_GST_CONTENT 
+        x-ui-map: Claim Application.3.GST Content 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent 
+      OncTaxesFromDate:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 401 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_BY_NAME 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         The start date to which the tax claim relates. 
+        type: string 
+        example: 23-Jun-2012 
         minimum: 1 
         maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WITHDRAWN_DATE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_FROM_DATE 
+        x-ui-map: Claim Application.3.Start 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncTaxesToDate:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         THe end date to which the tax claim relates. 
+        type: string 
+        example: 3-Dec-2012 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_TO_DATE 
+        x-ui-map: Claim Application.3.End 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncTaxesDescription:
+        description: >-
+         A description of the Tax claim. 
+        type: string 
+        example: ACC Levies. 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_DESCRIPTION 
+        x-ui-map: Claim Application.3.Description 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncTaxesEvidenceCode:
+        description: >-
+         Enum: 
+        type: string 
+        example: DRM 
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_TAXES_EVIDENCE_CODE 
+        x-ui-map: Claim Application.3.Evidence 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncOutAmountClaimed:
+        description: >-
+         The amount claimed for other tpes of debt. 
+        type: number 
+        example: 9000 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_AMOUNT_CLAIMED 
+        x-ui-map: Claim Application.4,Amount Claimed 
+        x-uc-map: PE 
+        x-permissions: r-c, 
+      OncOutAmountInWords:
+        description: >-
+         T 
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_AMOUNT_IN_WORDS 
+        x-ui-map:  
+        x-uc-map: PE.Deprecated 
+        x-permissions:  
+      OncOutGstContent:
+        description: >-
+         The GST content of claims under other in the claim application. 
+        type: number 
+        example: 222.14 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_GST_CONTENT 
+        x-ui-map: Claim Application.4.CST Content 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncOutFromDate:
+        description: >-
+         The srart date for claims under other. 
+        type: string 
+        example: 23-Jul-2014 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_FROM_DATE 
+        x-ui-map: Claim Application.4.From 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncOutToDate:
+        description: >-
+         The end datae for claims under other. 
+        type: string 
+        example: PE 
+        minimum: 1 
+        maximum: 7 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_TO_DATE 
+        x-ui-map: Claim Application.4.To 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncOutDescription:
+        description: >-
+         Description of claims nder other. 
+        type: string 
+        example: Giftware products (fairies, dragons etc). 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_DESCRIPTION 
+        x-ui-map: Claim Applitcation.4.Description 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent r-insolvency-officer 
+      OncOutEvidenceCode:
+        description: >-
+         Enum 
+        type: string 
+        example: DRM 
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_OUT_EVIDENCE_CODE 
+        x-ui-map:  
+        x-uc-map: PE 
+        x-permissions:  
+      OncSecValue:
+        description: >-
+         The value of securities claimed as part of the application. 
+        type: number 
+        example: 222000 
+        minimum: 1 
+        maximum: 22 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_VALUE 
+        x-ui-map: Claim Application,5.Value of securities 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-c-a, r-insolvency-officer 
+      OncSecValueInWords:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_VALUE_IN_WORDS 
+        x-ui-map:  
+        x-uc-map: PE.Deprecated 
+        x-permissions:  
+      OncSecDescription:
+        description: >-
+         Description of the securities claimed in the application. 
+        type: string 
+        example: 42 Trevone Place, Forrest Hill, Auckland 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_DESCRIPTION 
+        x-ui-map: Claim Application,5,Description 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncSecEvidenceCode:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_SEC_EVIDENCE_CODE 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncCourtActionDescription:
+        description: >-
+         Description of any court actions relation to any of the claims in the application. 
+        type: string 
+        example: Judgement by default. Sealed on 10th June 2012. 
+        minimum: 1 
+        maximum: 400 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COURT_ACTION_DESCRIPTION 
+        x-ui-map: Claim Application..6.Description 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncCoutActionCode:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COUT_ACTION_CODE 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncCourtActionEvidence:
+        description: >-
+         The link to the evidence of court action supplied with the applciation. 
+        type: string 
+        example: DRM 
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_COURT_ACTION_EVIDENCE 
+        x-ui-map:  
+        x-uc-map: PE 
+        x-permissions:  
+      OncClaimIncludeInterestYn:
+        description: >-
+         Boolean indicating whether the application includes court awarded interest or interest agreed in a contract. 
+        type: string 
+        example: true 
+        minimum: 1 
+        maximum: 1 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CLAIM_INCLUDE_INTEREST_YN 
+        x-ui-map: Claim Application.7 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncInterestEvidenceCode:
+        description: >-
+         Enum 
+        type: string 
+        example:  
+        minimum: 1 
+        maximum: 240 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_INTEREST_EVIDENCE_CODE 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncCurCode:
+        description: >-
+         Currency code for?? 
+        type: string 
+        example: NZD 
         minimum: 1 
         maximum: 3 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CUR_CODE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE 
+        x-ui-map: ?? 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncCurCodeTaxes:
         description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
+         Currency code for claims relating to tax. 
+        type: string 
+        example: NZD 
         minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_WTC_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CTT_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_KCR_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_ONC_ID 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_CLM_CLAIMS.CLM_JOINT_PAID_TO_DATE 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 0 
         maximum: 3 
-        x-table-map: HIST_CLM_CLAIMS.CLM_RINGFENCE_TYPE_CODE 
-        x-ui-map: UI 
-      HistClmClaims:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_TAXES 
+        x-ui-map: Claim Application.3.Currency 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncCurCodeSecurity:
         description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
+         Currency code for amounts relating to securities claimed. 
+        type: string 
+        example: AUD 
         minimum: 1 
-        maximum: 4000 
-        x-table-map: HIST_CLM_CLAIMS.CLM_REASON_FOR_CHANGE 
-        x-ui-map: UI 
-      HistClmClaims:
+        maximum: 3 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_SECURITY 
+        x-ui-map: Claim Application.5.Currency 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncCurCodeOutstanding:
         description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
+         Currency code relating to amounts clamed under other. 
+        type: string 
+        example: USD 
         minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_LARGE_CLM_FILED_ALERT_SENT 
-        x-ui-map: UI 
-      HistClmClaims:
+        maximum: 3 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_OUTSTANDING 
+        x-ui-map: Claim Applicaton.4.Currency 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncCttId:
         description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.CLM_CRED_RPT_SENT 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 1 
-        x-table-map: HIST_CLM_CLAIMS.ACTION 
-        x-ui-map: UI 
-      HistClmClaims:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 7 
-        x-table-map: HIST_CLM_CLAIMS.AUDITED_DATE 
-        x-ui-map: UI 
-      HistId:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.HIST_ID 
-        x-ui-map: UI 
-      EclId:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ID 
-        x-ui-map: UI 
-      EclClmId:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_CLM_ID 
-        x-ui-map: UI 
-      EclEstateNumber:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ESTATE_NUMBER 
-        x-ui-map: UI 
-      EclPaidToDate:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_PAID_TO_DATE 
-        x-ui-map: UI 
-      EclLastUpdatedBy:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 250 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED_BY 
-        x-ui-map: UI 
-      EclLastUpdatedName:
-        description: >-
-         DESC 
-        type: VARCHAR2 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 401 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED_NAME 
-        x-ui-map: UI 
-      EclLastUpdated:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 7 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_LAST_UPDATED 
-        x-ui-map: UI 
-      EclVersion:
-        description: >-
-         DESC 
-        type: NUMBER 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_VERSION 
-        x-ui-map: UI 
-      EclAdminCompletedAlertSent:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ADMIN_COMPLETED_ALERT_SENT 
-        x-ui-map: UI 
-      EclAdminReOpenedAlertSent:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_ADMIN_RE_OPENED_ALERT_SENT 
-        x-ui-map: UI 
-      EclFundsRealisedAlertSent:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 1 
-        maximum: 7 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ECL_FUNDS_REALISED_ALERT_SENT 
-        x-ui-map: UI 
-      Action:
-        description: >-
-         DESC 
-        type: CHAR 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 1 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.ACTION 
-        x-ui-map: UI 
-      AuditedDate:
-        description: >-
-         DESC 
-        type: DATE 
-        example: EXAMPLE 
-        minimum: 0 
-        maximum: 7 
-        x-table-map: HIST_ECL_ESTATE_CLAIMS.AUDITED_DATE 
-        x-ui-map: UI 
-      PocUaId:
-        description: >-
-         I dont know 
-        type: NUMBER 
-        example: Turpenting on the sundhine of the spotless mind on a tuesday swimming with the different whales facing me for life and underneath the brown murky cloud we will see just how many barbecues you can make 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: this.that 
-        x-uc-map: UC 22 
-      PocUaId:
-        description: >-
-         about the sunshine 
-        type: NUMBER 
-        example: fqe 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: af 
-        x-uc-map: fq 
-      PocUaId:
-        description: >-
-         this sis a long story, but \n hard to be trick\n maybe \n \n we will see 
-        type: NUMBER 
-        example: ok 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: find thisn 
-        x-uc-map: 123 
-      ClmId:
-        description: >-
-         fjvfjhv  fjqwjc fpajfm 
+         The unique contact ID relating to the account that created the claim. 
         type: number 
-        example: vfc 
+        example: 1085214 
         minimum: 0 
         maximum: 22 
-        x-table-map: CLM_CLAIMS.CLM_ID 
-        x-ui-map: ccd .. d 
-        x-uc-map: ewqefj 
-      PocUaId:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CTT_ID 
+        x-ui-map: Not applicable 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
+      OncKcrId:
         description: >-
-         wefqf 
+         The key creditor id - MAP AS A MULTIPLE TO ABOVE RECORD 
         type: number 
-        example: v 
-        minimum: 0 
+        example:  
+        minimum: 1 
         maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: wegg 
-        x-uc-map: b 
-      PocUaId:
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_KCR_ID 
+        x-ui-map:  
+        x-uc-map:  
+        x-permissions:  
+      OncCurCodeApp:
         description: >-
-         sfwefd 
-        type: number 
-        example: fqjfj 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: foefihv   oiqfj 
-        x-uc-map: 214r421 
-      PocUaId:
-        description: >-
-         efq 
-        type: number 
-        example: fqwrfqw 
-        minimum: 0 
-        maximum: 22 
-        x-table-map: POC_USERS_VW.POC_UA_ID 
-        x-ui-map: qwrfqwr 
-        x-uc-map: qfqfg 
+         The currency code for adjucicated or application costs. 
+        type: string 
+        example: NZD 
+        minimum: 1 
+        maximum: 3 
+        x-table-map: ONC_POTENTIAL_ONLINE_CLAIMS.ONC_CUR_CODE_APP 
+        x-ui-map: Claim Applciation.1.Currency 
+        x-uc-map: PE 
+        x-permissions: r-creditor, r-creditor-agent, r-insolvency-officer 
