@@ -17,7 +17,7 @@ file.each_line do |line|
 #	puts "Table name: #{table} column: #{column}"
 	recordCount += 1
 
-	if /#{search_str}/.match(columnName)
+	if /#{search_str}/.match(tableName)
 #		puts tableName#
 		match_tables << "Table name: #{tableName} column: #{columnName}"
 	end

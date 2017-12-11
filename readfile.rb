@@ -63,7 +63,8 @@ if specific_match == true
 	  min,	
 	  max, 
 	  x_table_map, 
-	  x_ui_map = data[1], 
+	  x_ui_map,
+	  x_permissions = data[1], 
 		 	data[2],
 		 	data[3].sub("DATE", "string").sub("VARCHAR2","string").sub("CHAR", "string").sub("NUMBER","number").sub("BLOB", "object").sub("CLOB", "object"),
 			"DESC",
@@ -71,7 +72,8 @@ if specific_match == true
 			data[5].sub("Y", "1").sub("N","0"),
 			data[4],
 			data[1]+ "." + data[2],
-			"UI"
+			"UI",
+			"Permissions"
 	  if tableName == specific_table
 #	    puts "Table name: #{tableName} column: #{columnName}"
 	    yaml_output(tableName, 
@@ -82,14 +84,12 @@ if specific_match == true
 			min,
 			max, 
 			x_table_map, 
-			x_ui_map)
+			x_ui_map,
+			x_permissions)
 			
 	  end
  	end
 end 
-
-puts "#{recordCount} columns scanned"
-
 
 
 
