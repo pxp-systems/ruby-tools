@@ -72,8 +72,7 @@ if specific_match == true
 			data[5].sub("Y", "1").sub("N","0"),
 			data[4],
 			data[1]+ "." + data[2],
-			"UI",
-			"Permissions"
+			"UI"
 	  if tableName == specific_table
 #	    puts "Table name: #{tableName} column: #{columnName}"
 	    yaml_output(tableName, 
@@ -84,8 +83,7 @@ if specific_match == true
 			min,
 			max, 
 			x_table_map, 
-			x_ui_map,
-			x_permissions)
+			x_ui_map)
 			
 	  end
  	end
