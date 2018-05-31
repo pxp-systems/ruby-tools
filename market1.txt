@@ -1,3 +1,4 @@
+<<<<<<< HEAD
       FolSavedToLinkedEstatesYn:
         description: >-
           
@@ -160,3 +161,167 @@
         maximum: 22 
         x-table-map: FOL_FOLIOS.FOL_BARCODE 
         x-ui-map:  
+=======
+      FolSavedToLinkedEstatesYn:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 1 
+        x-table-map: FOL_FOLIOS.FOL_SAVED_TO_LINKED_ESTATES_YN 
+        x-ui-map:  
+      FolId:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 0 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_ID 
+        x-ui-map:  
+      FolSequence:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 0 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_SEQUENCE 
+        x-ui-map:  
+      FolType:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 10 
+        x-table-map: FOL_FOLIOS.FOL_TYPE 
+        x-ui-map:  
+      FolStatus:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 7 
+        x-table-map: FOL_FOLIOS.FOL_STATUS 
+        x-ui-map:  
+      FolOlfId:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 0 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_OLF_ID 
+        x-ui-map:  
+      FolOnlineDescription:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 255 
+        x-table-map: FOL_FOLIOS.FOL_ONLINE_DESCRIPTION 
+        x-ui-map:  
+      FolReference:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 60 
+        x-table-map: FOL_FOLIOS.FOL_REFERENCE 
+        x-ui-map:  
+      FolProtectionStatus:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 12 
+        x-table-map: FOL_FOLIOS.FOL_PROTECTION_STATUS 
+        x-ui-map:  
+      FolVersion:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 0 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_VERSION 
+        x-ui-map:  
+      FolLastUpdatedBy:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 250 
+        x-table-map: FOL_FOLIOS.FOL_LAST_UPDATED_BY 
+        x-ui-map:  
+      FolLastUpdatedName:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 401 
+        x-table-map: FOL_FOLIOS.FOL_LAST_UPDATED_NAME 
+        x-ui-map:  
+      FolLastUpdated:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 7 
+        x-table-map: FOL_FOLIOS.FOL_LAST_UPDATED 
+        x-ui-map:  
+      FolCreated:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 7 
+        x-table-map: FOL_FOLIOS.FOL_CREATED 
+        x-ui-map:  
+      FolCreatedBy:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 250 
+        x-table-map: FOL_FOLIOS.FOL_CREATED_BY 
+        x-ui-map:  
+      FolCreatedName:
+        description: >-
+          
+        type: string 
+        example:  
+        minimum: 0 
+        maximum: 401 
+        x-table-map: FOL_FOLIOS.FOL_CREATED_NAME 
+        x-ui-map:  
+      FolDtpId:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 1 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_DTP_ID 
+        x-ui-map:  
+      FolBarcode:
+        description: >-
+          
+        type: number 
+        example:  
+        minimum: 1 
+        maximum: 22 
+        x-table-map: FOL_FOLIOS.FOL_BARCODE 
+        x-ui-map:  
+>>>>>>> 5c01ee7e7b9c8b5317cef338a3422beca3a51eb6
