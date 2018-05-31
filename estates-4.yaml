@@ -1,0 +1,2681 @@
+  EstateDetailRecord:
+    x-uuid: 4e6e6970-3747-453b-9a98-ca9c0d6b6334
+    properties:
+      copTypePwDeducted:
+        x-uuid: a6e12256-4fb0-4d91-bbbe-d4f8112932b2
+        description: >-
+                Productivity weighting (to be removed?)
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_COP_TYPE_PW_DEDUCTED_YN
+      estateFirstName:
+        x-uuid: 88098c00-6048-43d1-a373-1484e050fa81
+        description: >-
+            The first name of the person going through an insolvency procedure.
+            ** Important ** to note that this may also be the ONLY name as last name is not mandatory.
+        type: string
+        example:  Leizel
+        maxLength: 200
+        x-table-map: ESE_ESTATES.ESE_ESTATE_FIRST_NAME
+      estateLastName:
+        1c184754-ec1d-4de7-ae40-0ace62cc48031c184754-ec1d-4de7-ae40-0ace62cc48031c184754-ec1d-4de7-ae40-0ace62cc4803
+        1c184754-ec1d-4de7-ae40-0ace62cc48031c184754-ec1d-4de7-ae40-0ace62cc48031c184754-ec1d-4de7-ae40-0ace62cc4803
+        1c184754-ec1d-4de7-ae40-0ace62cc48031c184754-ec1d-4de7-ae40-0ace62cc4803
+        1c184754-ec1d-4de7-ae40-0ace62cc4803
+        1c184754-ec1d-4de7-ae40-0ace62cc4803
+      estateMiddleNames:
+        x-uuid: 614829b8-d10f-45f2-bc4a-91f6026e85a0
+        description: >-
+            The middle name(s) of the person going through the insolvency procedure. Expected to be separated by spaces
+        type: string
+        example: Robina Dorian Renata
+        maxLength: 200
+        x-table-map: ESE_ESTATES.ESE_ESTATE_MIDDLE_NAMES
+      estateOrganisationName:
+        x-uuid: 9cd8728f-e8f9-499d-b4ac-be00a9cd250d
+        description: >-
+            Where the insolvency relates to an organisation, the name of that organisation.
+        type: string
+        example: Tarquis Holdings Limited
+        maxLength: 200
+        x-table-map: ESE_ESTATES.ESE_ESTATE_ORGANISATION_NAME
+      enforcement:
+        description: >-
+            Estate has been referred for enforcement. Will mean that contact centre staff will be more prudent
+             about disclosure related to this estate.
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_ENFORCEMENT_YN
+      profileWarnShown:
+        x-uuid: d31908eb-54ed-4901-ba60-97ba73fe6757
+        description: >-
+            Trigger for the GUI to nag the user due to profiling not having been
+            completed.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_PROFILE_WARN_SHOWN_YN
+      income:
+        description: >-
+            The annual income of the insolvent party.
+        type: number
+        example: 26518
+        x-table-map: ESE_ESTATES.ESE_INCOME
+      pedicateOffences:
+        description: >-
+                Offences predicating the insolvency (if any).
+        type: string
+        example: 1.  Possession of Cannabis for the purpose of supply
+                 2.  Cultvating Cannabis
+                 3.  Possesion of equipment to cultivate cannabis
+        maxLength: 500
+        x-table-map: ESE_ESTATES.ESE_PREDICATE_OFFENCES
+      lastAssignedToTmr:
+        x-uuid: 5a775c3c-5678-4c0b-b92e-85e1d03f92e7
+        description: >-
+            The date that the estate was last assigned to time management reporting?
+        type: string
+        format: date
+        example: 24/02/09
+        x-table-map: ESE_ESTATES.ESE_LAST_ASSIGNED_TO_TMR
+      employmentStatDetail:
+        x-uuid: 78b01cf6-1666-45f4-883f-1d16906bdf7e
+        description: >-
+            == Not currently in use ==
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_EMPLOYMENT_STAT_DETAIL
+        x-ui-map:
+      mainCauseBkrptcyDetail:
+        x-uuid: d3f6ad49-1309-4ac9-aa35-83e5d693afab
+        description: >-
+             == Not currently in use ==
+        type: string
+        x-table-map: ESE_ESTATES.ESE_MAIN_CAUSE_BKRPTCY_DETAIL
+      cntrCauseBkrptcyDetail:
+        x-uuid: c1ea2d20-2d2d-4997-aa5b-43e7d670df4f
+        description: >-
+               == Not currently in use ==
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_CNTR_CAUSE_BKRPTCY_DETAIL
+      ethnicityAsianDetail:
+        x-uuid: 18243097-72ba-4f64-ba22-921e6e8592e8
+        description: >-
+            Detail of Asian ethnicity
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_ETHN_ASIAN_DETAIL
+      permanentPubDisplay:
+        x-uuid: 832c82da-20b5-4de1-9154-4588ad7ab5dc
+        description: >-
+            For multiple insolvents - indicates that this record will be on the register
+            permanantly.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_PERMANENT_PUB_DISPLAY_YN
+      delayedDischarge:
+        description: >-
+          Normal discharge is driven by adjudication and filing of statement of affairs. A judge may vary this.
+        type: string
+        example: 25/05/17
+        x-table-map: ESE_ESTATES.ESE_DELAYED_DISCHARGE
+      delayedDischargeReset:
+        x-uuid: a21ca49f-f0a7-4bef-b1cd-b907e3274f89
+        description: >-
+             Look at old FS to determine when this filed would be used.
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_DELAYED_DISCHARGE_RESET
+      ethnPacificDetail:
+        x-uuid: 1b93727f-8cce-4895-8044-055bd51459b5
+        description: >-
+            Detail of pacifica ethnicity
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_ETHN_PACIFIC_DETAIL
+      ethnEuropeanDetail:
+        x-uuid: 72db95a0-48fe-4f78-a065-c7f17d20488b
+        description: >-
+             Detail of european ethnicity
+        type: string
+        example: Scottish
+        x-table-map: ESE_ESTATES.ESE_ETHN_EUROPEAN_DETAIL
+      ethnOtherDetail:
+        x-uuid: d5563a4a-b168-4633-8597-ecf0a070e246
+        description: >-
+
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_ETHN_OTHER_DETAIL
+      autoConsentPerm:
+        x-uuid: 06add19a-c805-4f4f-9513-1fb73aa12f72
+        description: >-
+              Indicates if travel approval has been granted.
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_AUTO_CONSENT_PERM_YN
+      currentEmploymentDetail:
+        x-uuid: b6557b8c-4f29-40c7-9694-964521f83591
+        description: >-
+          Further detail on employment situation.
+        type: string
+        example: full time employment
+        maxLength: 1000
+        x-table-map: ESE_ESTATES.ESE_CUR_EMPLOYMENT_DETAIL
+      employmentConsentGranted:
+        x-uuid: 477bb761-9dc2-4ef1-9eeb-d6287db3029a
+        description: >-
+
+        type: number
+        example: 12
+        maxLength: 22
+        x-table-map: ESE_ESTATES.ESE_EMPLOYMENT_CONSENT_GRANTED
+      dischargeType:
+        description: >-
+          The reason for discharge
+        type: number
+        example: Early Discharge
+        x-table-map: ESE_ESTATES.ESE_BLI_ID_DISCHARGE_TYPE
+      definedIssueType:
+        x-uuid: 5a4dbe45-c7b4-4ee1-bf54-70b97053d802
+        description: >-
+          Issue description
+        type: number
+        example: Error Identified
+        x-table-map: ESE_ESTATES.ESE_BLI_ID_DEFINED_ISSUE_TYPE
+      employmentStatus:
+        description: >-
+            The current employment status of the insolvent party.
+        type: string
+        example: Unpaid family worker
+        x-table-map: ESE_ESTATES.ESE_ESA_ID
+      completionDetails:
+        description: >-
+          Final 'state;' of insolvency procedure.
+        type: string
+        example: Completed - Paid in Part
+        x-table-map: ESE_ESTATES.ESE_BLI_ID_COMPLETION_DETAILS
+      irdOffice:
+        description: >-
+            The IRD office dealing with the insolvency - to be removed due to IRD centralising
+            CC functions - confirm with JH.
+        type: number
+        example: Napier
+        x-table-map: ESE_ESTATES.ESE_IRO_ID
+      annulmentType:
+        description: >-
+          The annulment type
+        type: string
+        example: Completed - Paid in Part
+        x-table-map: ESE_ESTATES.ESE_BLI_ID_ANNULMENT_TYPE
+      teamAssigned:
+        description: >-
+            The team managing the estate
+        type: number
+        example: Hamilton Complex
+        x-table-map: ESE_ESTATES.ESE_TEM_ASSIGNED_ID
+      groupAssignedOffice:
+        x-uuid: 854f698b-5f37-4b4c-b0e7-20fe538e6e09
+        description: >-
+          The group managing the estate
+        type: number
+        example: Wellington
+        x-table-map: ESE_ESTATES.ESE_GRP_ASSIGNED_OFFICE_ID
+        x-ui-map:
+      appliedWeighting:
+        description: >-
+
+        type: number
+        example: 2
+        x-table-map: ESE_ESTATES.ESE_APPLIED_WEIGHTING
+      assignedUpdated:
+        description: >-
+              The date the estate was assigned
+        type: string
+        format: date
+        example: 27/11/07
+        x-table-map: ESE_ESTATES.ESE_ASSIGNED_UPDATED
+      assignedUpdatedBy:
+        x-uuid: d0e93759-0a76-4032-b830-a804ea63a365
+        description: >-
+              The username of the person the estate was assigned by
+        type: string
+        example: MORROWP
+        x-table-map: ESE_ESTATES.ESE_ASSIGNED_UPDATED_BY
+        x-ui-map:
+      assignedUpdatedName:
+        x-uuid: bab463e1-3982-4cca-a291-3d7fe814aac4
+        description: >-
+            The name of the person who last assigned the estate
+        type: string
+        example: Perry Mason
+        x-table-map: ESE_ESTATES.ESE_ASSIGNED_UPDATED_NAME
+      supplementaryProductivityUpdated:
+        x-uuid: 722fb0ee-aeb0-4727-9f95-392bdb5d5461
+        description: >-
+                supplementaryProductivity Audit data date
+        type: string
+        example:
+        minimum: 1
+        maximum: 7
+        x-table-map: ESE_ESTATES.ESE_SUPPL_PROD_UPDATED
+        x-ui-map:
+      supplementaryProductivityUpdatedBy:
+        x-uuid: ba0a2991-0f43-488c-88e9-a10f2547a689
+        description: >-
+              supplementaryProductivity Audit data account
+        type: string
+        example:
+        minimum: 1
+        maximum: 250
+        x-table-map: ESE_ESTATES.ESE_SUPPL_PROD_UPDATED_BY
+        x-ui-map:
+      supplementaryProductivityUpdatedName:
+        x-uuid: 7e4e73d0-81e4-4e62-ab88-0a7b3715e7f4
+        description: >-
+              supplementaryProductivity Audit data name
+        type: string
+        example:
+        minimum: 1
+        maximum: 150
+        x-table-map: ESE_ESTATES.ESE_SUPPL_PROD_UPDATED_NAME
+        x-ui-map:
+      insolvencySearchable:
+        description: >-
+          Controls whether estate appears in search results
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_INSOLVENCY_SEARCHABLE_YN
+      dischargeDateUpdatedBy:
+        x-uuid: 6c191576-afaf-4232-bc4f-3cc6beaef513
+        description: >-
+          The username of the person updating the discharge date
+        type: string
+        example: JHONNYC
+        x-table-map: ESE_ESTATES.ESE_DISCHARGE_DATE_UPDATED_BY
+      maxWeightings:
+        description: >-
+
+        type: number
+        example: 7.5
+        x-table-map: ESE_ESTATES.ESE_MAX_WEIGHTINGS
+      firstReportSent:
+        x-uuid: 8859bf83-2104-479c-a2e7-b6e3429783af
+        description: >-
+            The date the first report was sent to creditors.
+        type: string
+        format: date
+        example: 15/05/09
+        x-table-map: ESE_ESTATES.ESE_FIRST_RPT_SENT
+      sixMonthReportSent:
+        x-uuid: 9594ae50-0dd4-41be-aa16-b571c8b993ef
+        description: >-
+          The date the 6 month report was sent to creditors.
+        type: string
+        format: date
+        example: 15/05/09
+        x-table-map: ESE_ESTATES.ESE_6MTH_RPT_SENT
+      underOldLegislation:
+        x-uuid: df396bc6-f0dd-4f50-b3ce-51b5a7ca60c4
+        description: >-
+            Flag to specify insolvency governed b older legislation.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_UNDER_OLD_LEGISLATION_YN
+      sioSuperAutoPay:
+        x-uuid: 91ee4bbf-3545-4c09-971b-75c8e18a86ac
+        description: >-
+            Flag to indicate if...
+        type: boolean
+        example:
+        x-table-map: ESE_ESTATES.ESE_SIO_SUPER_AUTO_PAY_YN
+        x-ui-map:
+      oaCommReceived:
+        x-uuid: a8fa28fa-bc87-42c4-82bb-4c692775f024
+        description: >-
+            Not sure
+        type: boolean
+        example:
+        x-table-map: ESE_ESTATES.ESE_OA_COMM_RECEIVED
+      sioAppFeePaid:
+        x-uuid: 69239a6f-6842-4b4f-9a09-702058dcdeb2
+        description: >-
+          Has the application been paid?
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_SIO_APP_FEE_PAID
+      trustAccountUsed:
+        x-uuid: 173647d5-3651-4054-b0a7-5edd1272904b
+        description: >-
+            The trust account used for the insolvency
+
+            == Not currently in use ==
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_TRUST_ACCOUNT_USED
+      dischargeCertSent:
+        x-uuid: 6d7bf912-8d9b-4d23-98ba-86e7b0de910b
+        description: >-
+            Date that the discharge certificate was sent out to the insolvent.
+        type: string
+        format: date
+        example: 05/03/11
+        x-table-map: ESE_ESTATES.ESE_DISCHARGE_CERT_SENT
+      estimatedCompletionDate:
+        x-uuid: cb7c46cd-ac45-407e-8047-3a56e0605565
+        description: >-
+            The data the officer estimates the insolvency will be complete
+        type: string
+        example: 14/04/19
+        x-table-map: ESE_ESTATES.ESE_ESTIMATED_COMPLETION_DATE
+      currentCharges:
+        description: >-
+            Nt in use
+        type: number
+        example:
+        x-table-map: ESE_ESTATES.ESE_CURRENT_CHARGES
+      petitionFilingDate:
+        x-uuid: 7bf60268-027e-4cd6-bee6-ecf103c344a6
+        description: >-
+            The date that the petition was filed
+        type: string
+        example: 1/02/17
+        x-table-map: ESE_ESTATES.ESE_PETITION_FILING_DATE
+      chargeMethodCode:
+        x-uuid: 0e7f0bf9-5dd9-42d5-aad7-e915734e1e4f
+        description: >-
+          Denoted the cost recovery method
+        type: string
+        enum:
+            - TIM
+            - COM
+        example: TIM
+        x-table-map: ESE_ESTATES.ESE_CHARGE_METHOD_CODE
+      petitionServiceDate:
+        x-uuid: 1730e9ee-f57a-46a4-870d-efd8edb9a356
+        description: >-
+            If applicable, the date that the petition was served on the insolvent party.
+        type: string
+        example: 1/02/17
+        x-table-map: ESE_ESTATES.ESE_PETITION_SERVICE_DATE
+      ppoAmountDue:
+        x-uuid: 4fa75317-8034-4eb3-954f-b166793eaff2
+        description: >-
+            Amount due under Pecuniary Penalty Order (CPMU only)
+        type: number
+        example: 980000
+        x-table-map: ESE_ESTATES.ESE_PPO_AMOUNT_DUE
+      ppoPaymentDueDate:
+        x-uuid: 57b66305-2be3-4162-9657-d95914ccf078
+        description: >-
+            Expected due date for amount due under Pecuniary Penalty Order (CPMU only)
+        type: string
+        format: date
+        example: 1/02/17
+        x-table-map: ESE_ESTATES.ESE_PPO_PAYMENT_DUE_DATE
+      debtorTradingStatus:
+        x-uuid: f68efefa-fe29-4df6-b6aa-5d2ddafa4cf2
+        description: >-
+              Is the debtor still trading
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_DEBTOR_TRADING_STATUS_YN
+        x-ui-map:
+      startedTradingDate:
+        x-uuid: b8a8fbf7-6721-4c42-960c-3171636634ce
+        description: >-
+            Date insolvent party began trading
+        type: string
+        format: date
+        example: 5/5/2012
+        x-table-map: ESE_ESTATES.ESE_STARTED_TRADING_DATE
+      ceasedTradingDate:
+        x-uuid: 847c9db9-3a25-4e8a-b815-a4f78e9f6f88
+        description: >-
+            Date insolvent party ceased trading
+        type: string
+        format: date
+        example: 8/5/2017
+        x-table-map: ESE_ESTATES.ESE_CEASED_TRADING_DATE
+      finalAccountYn:
+        x-uuid: 5b01f372-34b6-4f7e-ab36-4cb7507a3105
+        description: >-
+            Boolean indicating whether the estate has had a final account.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_YN
+      finalAccountSet:
+        x-uuid: c307d134-9ace-4bb2-ac91-7810db09d2d5
+        description: >-
+            Date of final account.
+        type: string
+        example: 13/9/2013
+        x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_SET
+      finalAccountSetTmr:
+        x-uuid: cc0eb977-3b65-4dab-9968-bbb39931f8dd
+        description: >-
+              Team member who perfromed the final account.
+        type: number
+        example: SAMP
+        x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_SET_TMR_ID
+      createdFromWizard:
+        x-uuid: 540707d2-f7fd-4d74-b1ca-c3f0a5706b89
+        description: >-
+              Flag to indicate estate was created online from a statement of affairs.
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_CREATED_FROM_WIZARD_YN
+      soaReceivedNrg:
+        x-uuid: e52d21c2-7231-43de-b34e-e82486d05b5c
+        description: >-
+            Flag to indicate SOA received by NRG
+        type: string
+        example: false
+        x-table-map: ESE_ESTATES.ESE_SOA_RECEIVED_NRG_YN
+      soaReceivedNrgCreated:
+        x-uuid: 622b8553-a923-445c-a5ae-553ced2e1772
+        description: >-
+              Date SOA received by NRG
+        type: string
+        example: 7/12/2017
+        x-table-map: ESE_ESTATES.ESE_SOA_RECEIVED_NRG_CREATED
+      soaReceivedNrgCreatedBy:
+        x-uuid: 9ef35d85-cf93-4783-ba2e-f3f464293029
+        description: >-
+            User that received / processed SOA
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_SOA_REC_NRG_CREATED_BY
+      soaReceivedNrgCreatedName:
+        x-uuid: 07059fb7-2a0d-4e16-9b11-c88595d269ef
+        description: >-
+            User that received / processed SOA
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_SOA_REC_NRG_CREATED_NAME
+      keyDataFromBankrupt:
+        x-uuid: ddbd70e1-f4b1-4e04-8537-e1035f084e56
+        description: >-
+             Used to influence the measure processing time.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_FROM_BANKRUPT_YN
+      keyDataBankCreatedBy:
+        x-uuid: 7ddd7f43-9c38-4ac2-aa61-2d874ad43279
+        description: >-
+            Audit data.
+        type: string
+        example: AUSTINA
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_BANK_CREATED_BY
+      dataBankruptCreatedName:
+        x-uuid: b360b669-a016-4b25-acc1-e6708b631ba8
+        description: >-
+          Audit data.
+        type: string
+        example: April Austin
+        x-table-map: ESE_ESTATES.KEY_DATA_BANKRUPT_CREATED_NAME
+      keyDataBankruptDate:
+        x-uuid: 37ea7509-fb71-4899-9c7a-99a5a43269cf
+        description: >-
+           Audit data.
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_BANKRUPT_DATE
+      keyDataFromOther:
+        x-uuid: c722158a-9d8c-4300-a2e6-78c18848c363
+        description: >-
+
+           This is to be removed?
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_FROM_OTHER_YN
+        x-ui-map:
+      keyDataOtherCreatedBy:
+        x-uuid: 36977fb8-b0a5-4d12-bbef-b2da88120fe7
+        description: >-
+          Audit data.
+        type: string
+        example: PETERP
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_OTHER_CREATED_BY
+      keyDataOthCreatedName:
+        x-uuid: ea9772e1-24ab-40ab-8749-e86e27eb4ea8
+        description: >-
+              Audit data.
+        type: string
+        example: Peter Plimmer
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_OTH_CREATED_NAME
+      keyDataOtherCreated:
+        x-uuid: 40532d5c-57bd-423d-b38b-eda1196161e1
+        description: >-
+            Audit data.
+        type: string
+        format: date
+        example: 7/8/2010
+        x-table-map: ESE_ESTATES.ESE_KEY_DATA_OTHER_CREATED
+      advertisingStatusCode:
+        x-uuid: f3b87d18-bb53-42e2-9def-24310edffb16
+        description: >-
+              Status of the estate as regards advertising.
+        type: string
+        enum:
+              - TBA
+              - ADV
+              - CAN
+        example:
+        x-table-map: ESE_ESTATES.ESE_ADVERTISING_STATUS_CODE
+      moreInformation:
+        description: >-
+            Free text description to be included on register.
+        type: string
+        example: Attempts by the Official Assignee to physically locate the bankrupt at her last known address were unsuccessful.
+                 Investigations conducted by the Official Assignee through the public accessible databases did not reveal any assets
+                 which would be of value to the bankrupt's creditors. The Official Assignee has decided to close the administration
+                 of the bankrupt's estate and Ms Cai will remain bankrupt until such time as the Official Assignee receives a
+                 satisfactorily completed Statement of Affairs.
+
+                 If you are owed money you can assist the investigation by registering a claim in this estate. You may register a claim
+                 in this estate on-line via our website or you can call our Contact Centre on 0508 467 658 to arrange for a claim form to
+                 be sent to you. The claim form should be lodged as soon as possible.
+
+                 Should you have information or if you have any questions, please contact 0508 467 658 as soon as possible.
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_MORE_INFORMATION
+      moreInfoCreatedBy:
+        x-uuid: 3e4c5199-b34c-4e73-a6ad-efd4ca004561
+        description: >-
+           Audit data.
+        type: string
+        example: EMMYE
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED_BY
+      moreInfoCreatedName:
+        x-uuid: 9fe4b2e9-6ac0-46b5-9553-cb0469c0cb0a
+        description: >-
+            Audit Data
+        type: string
+        example:  Emmy Elvier
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED_NAME
+      moreInfoUpdated:
+        x-uuid: 78e9ff00-5546-4570-9efb-b469ca4c672e
+        description: >-
+          Audit data.
+        type: string
+        example: 4/11/2011
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED
+      moreInfoCreated:
+        x-uuid: 910886c9-5375-4634-8512-5707e9a04768
+        description: >-
+            Audit data.
+        type: string
+        format: date
+        example:  22/1/2011
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED
+      moreInfoUpdatedBy:
+        x-uuid: 53019c85-6415-4ae4-839f-3181aa3e75a4
+        description: >-
+          Audit data.
+        type: string
+        example: BILLYB
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED_BY
+      moreInfoUpdatedName:
+        x-uuid: 1fecfcb8-6cd0-4c5e-b6a7-41eec1e94c50
+        description: >-
+            Audit data
+        type: string
+        example: Billy Barker
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED_NAME
+        x-ui-map:
+      moreInfoStatusCode:
+        x-uuid: c2e47905-158e-442b-bdb1-bc655c6a67a5
+        description: >-
+            Free format seection (more info)
+            Draft - to Apprved. Once approved appears in the register for the public to view. Second entry point is via my claims.
+        type: string
+        enum:
+            - ARF
+            - DRF
+        example:
+        x-table-map: ESE_ESTATES.ESE_MORE_INFO_STATUS_CODE
+      bannedDirector:
+        description: >-
+            Is the insolvent a banned director?
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_BANNED_DIRECTOR_YN
+      banEndDate:
+        x-uuid: b9075d9e-20b6-4e37-af03-d75cbfd1854b
+        description: >-
+              Directors ban end date.
+        type: string
+        format: date
+        example: 15/4/2019
+        x-table-map: ESE_ESTATES.ESE_BAN_END_DATE
+      prohibitionOrder:
+        description: >-
+              Free text description of the prohibition order.
+        type: string
+        example: Mr Simpson has been prohibited from being a director or manager of a company for five years from 24 March 2009.
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_PROHIBITION_ORDER
+      gazetteNumber:
+        description: >-
+            Issue number  procedure published in gazette.
+        type: string
+        example: 44
+        x-table-map: ESE_ESTATES.ESE_GAZETTE_NUMBER
+      gazetteDate:
+        description: >-
+          Date procedure published in gazette.
+        type: string
+        format: date
+        example: 1/1/2016
+        x-table-map: ESE_ESTATES.ESE_GAZETTE_DATE
+      gazettePage:
+        description: >-
+            Page number procedure published on in gazette.
+        type: string
+        example:
+        x-table-map: ESE_ESTATES.ESE_GAZETTE_PAGE
+        x-ui-map:
+      companyNumber:
+        description: >-
+
+        type: number
+        example: 16531555
+        x-table-map: ESE_ESTATES.ESE_COMPANY_NUMBER
+      nzbn:
+        description: >-
+              New Zealand Business Number of entity where applicable
+        type: number
+        example: 186651351
+        x-table-map: ESE_ESTATES - NEW
+      companyInReceivership:
+        x-uuid: 80d8ea87-53bc-4fa0-94a9-1e7255f608e0
+        description: >-
+            Boolean indicating if the comapny is in receivership
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_COMPANY_IN_RECEIVERSHIP_YN
+      receiverAppointedDate:
+        x-uuid: 1f5719d5-be29-45eb-8113-76690c70467c
+        description: >-
+            Date appointed
+        type: string
+        format: date
+        example: 8/3/2017
+        x-table-map: ESE_ESTATES.ESE_RECEIVER_APPOINTED_DATE
+      appointedBy:
+        description: >-
+          The party appointing the receiver
+        type: string
+        example: Spicer & Associates Limited
+        x-table-map: ESE_ESTATES.ESE_APPOINTED_BY
+      initiatedByCode:
+        x-uuid: 7c121e94-59cf-4608-bf7e-0c72ed4f1219
+        description: >-
+            Who the insolvency was initiated by
+        type: string
+        enum:
+          - INA
+          - OGA
+          - SFO
+          - POL
+        example: INA
+        x-table-map: ESE_ESTATES.ESE_INITIATED_BY_CODE
+      enforcementCountryCode:
+        x-uuid: e7f8ad3c-3268-41a8-a266-1206b3a1e5da
+        description: |
+                 Treat this as an enumerator.
+
+                 Loosely mapped to the ISO4217 country codes. Currently updated infrequently.
+
+                 **Suggested UI implementation:** Implement as typeahead search. Big lists of enums suck.
+        type: string
+        example: NZD
+        externalDocs:
+          description: Current ISO list of codes (as xml)
+          url: https://www.currency-iso.org/dam/downloads/lists/list_one.xml
+        x-table-map: ESE_ESTATES.ESE_ENFORCEMENT_COUNTRY_CODE
+      governmentAgency:
+        description: >-
+            Government agency party to insolvency
+        type: string
+        example: NZ Customs
+        x-table-map: ESE_ESTATES.ESE_GOVERNMENT_AGENCY
+      thirdPartyInterests:
+        x-uuid: 43cc8171-9b60-4b11-a592-4feaec2fde4d
+        description: >-
+              Applies to CPMU estates. Where siezed assets may have 3rd party interests.
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_THIRD_PARTY_INTERESTS_YN
+      gstNumber:
+        description: >-
+            GST number of insolvent
+        type: string
+        example: 000-000-000
+        x-table-map: ESE_ESTATES.ESE_GST_NUMBER
+      gstBasisCode:
+        x-uuid: a7be8284-f21b-41ed-b8ae-13f3277463f4
+        description: >-
+           Invoice or payment - impacts on tax refund applications.
+        type: string
+        enum:
+            - INV
+            - PAY
+        example: PAY
+        x-table-map: ESE_ESTATES.ESE_GST_BASIS_CODE
+      gstStatusCode:
+        x-uuid: a7e11498-c4b7-4e4d-b852-e4fe03f18bc0
+        description: >-
+              GST registrations status.
+        type: string
+        enum:
+          - Y
+          - N
+          - C
+        example: C
+        x-table-map: ESE_ESTATES.ESE_GST_STATUS_CODE
+      gstCancelledDate:
+        x-uuid: 8f9be1fe-6585-4fca-bc40-77788ef4be6a
+        description: >-
+
+        type: string
+        format: date
+        example: 18/7/2014
+        x-table-map: ESE_ESTATES.ESE_GST_CANCELLED_DATE
+      irdNumber:
+        description: >-
+            IRD number of insolvent party
+        type: string
+        example: 002-853-709
+        x-table-map: ESE_ESTATES.ESE_IRD_NUMBER
+      irdContactName:
+        x-uuid: 5539a718-9d9e-4865-8a04-5c80376ded9b
+        description: >-
+            Free text not rlating to IRD contact
+        type: string
+        example: Nil return p/e 31/1/09
+        x-table-map: ESE_ESTATES.ESE_IRD_CONTACT_NAME
+      nextGstPeriodEndDate:
+        x-uuid: eb6fd6d3-a038-401e-a857-868324228f6d
+        description: >-
+            When the next GST period ends
+        type: string
+        format: date
+        example: 31/12/10
+        x-table-map: ESE_ESTATES.ESE_NEXT_GST_PERIOD_END_DATE
+      reasonAtAdjudication:
+        x-uuid: f2f07df5-2d9e-4732-aa63-a2b4e32190b1
+        description: >-
+            Reasons given for insolnvecy at adjudication date
+        type: string
+        example: Too highly leveraged, property crash
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_REASON_AT_ADJUDICATION
+      bankruptcyTypeCode:
+        x-uuid: c1f38171-d4fe-496d-a009-3967372bf317
+        description: >-
+
+        type: string
+        enum:
+            - COS
+            - BUS
+        example: BUS
+        x-table-map: ESE_ESTATES.ESE_BANKRUPTCY_TYPE_CODE
+      occupationAtAdjudication:
+        x-uuid: 68938a54-4e18-4d9e-a420-b2fa1cec0a66
+        description: >-
+            Occupation given at date of adjudication
+        type: string
+        example: Sales and Marketing Managers
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_OCCUPATION_AT_ADJUDICATION
+      gender:
+        description: >-
+
+        type: string
+        enum:
+              - Male
+              - Female
+              - Trans male
+              - Trans female
+              - Gender non-conforming
+              - Inter-sex
+              - Non-binary
+        example: Male
+        x-table-map: ESE_ESTATES.ESE_GENDER
+      previouslyBankrupt:
+        description: >-
+            Flag indicating that this is not the first bankruptcy procedure for the person involved.
+        type: string
+        example: false
+        x-table-map: ESE_ESTATES.ESE_PREVIOUSLY_BANKRUPT_YN
+      numberOfCreditCards:
+        x-uuid: bda01b81-a220-41c8-89a5-3852c46f7a7c
+        description: >-
+            The number of credit cards held by the insolvent.
+        type: number
+        example: 2
+        x-table-map: ESE_ESTATES.ESE_NUMBER_OF_CREDIT_CARDS
+      creditCardDebtAmount:
+        x-uuid: 11453882-2905-4a49-8093-325cfc842f2f
+        description: >-
+          Credit card debt at admittance
+        type: number
+        example: 14763.88
+        x-table-map: ESE_ESTATES.ESE_CREDIT_CARD_DEBT_AMOUNT
+      dischargeRefusedByCourt:
+        x-uuid: 6be153cd-f6fc-41f8-917c-1175986eb019
+        description: >-
+              IN some circumstances, a discharge may have been refused by the courts.
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_DISCH_REFUSED_BY_COURT_YN
+      suspended:
+        description: >-
+          Is the discharge of the estate suspended? Usually due due to investigative activity.
+
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_SUSPENDED_YN
+      reapplyForDischargeAfter:
+        x-uuid: ff4e9f77-c80b-44b1-9f6a-1e216ecda1cd
+        description: >-
+            The earliest date at which a discharge may be applied for.
+        type: string
+        format: date
+        example: 8/11/2020
+        x-table-map: ESE_ESTATES.ESE_REAPPLY_FOR_DISC_AFTER
+      dischargeDate:
+        description: >-
+
+        type: string
+        format: date
+        example: 8/11/2020
+        x-table-map: ESE_ESTATES.ESE_DISCHARGE_DATE
+      conditionExpiryDate:
+        x-uuid: 534a164f-612a-4e9a-8da5-acfd38d00bca
+        description: >-
+              Date at which conditions relating to discharge expire.
+        type: string
+        format: date
+        example: 21/3/2019
+        x-table-map: ESE_ESTATES.ESE_CONDITION_EXPIRY_DATE
+      recordsDestructionDate:
+        x-uuid: 06106da3-c25d-4e83-8477-d2732fb1a11c
+        description: >-
+
+        type: string
+        format: date
+        example: 21/3/2019
+        x-table-map: ESE_ESTATES.ESE_RECORDS_DESTRUCTION_DATE
+      conditions:
+        description: >-
+            Conditions associated with discharge
+        type: string
+        example: The conditions were
+                  (a) public examination
+                  (b) unable to be involved with a business
+                  (c) be employed by family
+                  (d) not allowed to be a director.
+        x-table-map: ESE_ESTATES.ESE_CONDITIONS
+      annulmentProcess:
+        description: >-
+              Used as a warning - dividend payment or disposal of assets.
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_PROCESS_YN
+      annulmentHearingDate:
+        x-uuid: 33e0ea51-c9cc-437a-b67e-7969dc410cb2
+        description: >-
+              Date of annulment hearing
+        type: string
+        example: 18/6/2018
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_HEARING_DATE
+      annulmentInjunction:
+        description: >-
+
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_INJUNCTION_YN
+      annulmentComments:
+        description: >-
+
+        type: string
+        example: Only one creditor - paid
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_COMMENTS
+      annulmentOutcomeCode:
+        x-uuid: ecad8057-d08e-4ff5-b785-776fc18880e0
+        description: >-
+
+        type: string
+        example: FOR
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_OUTCOME_CODE
+      annulmentDate:
+        description: >-
+
+        type: string
+        format: date
+        example: 25/1/2017
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_DATE
+      annulmentAdStatusCode:
+        x-uuid: 6f7ee9a7-5497-493c-95a7-c4bce2208392
+        description: >-
+
+        type: string
+        enum:
+            - Y
+            - N
+            - T
+        example: Y
+        x-table-map: ESE_ESTATES.ESE_ANNULMENT_AD_STATUS_CODE
+      appealLodged:
+        description: >-
+
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_APPEAL_LODGED_YN
+      appealDate:
+        description: >-
+
+        type: string
+        format: date
+        example: 7/12/2016
+        x-table-map: ESE_ESTATES.ESE_APPEAL_DATE
+      appealSubjectCode:
+        x-uuid: 3f46ded9-2b0f-431f-8c63-0fe2956c94ea
+        description: >-
+
+        type: string
+        enum:
+            - CON
+            - BTH
+            - ORD
+        example: CON
+        x-table-map: ESE_ESTATES.ESE_APPEAL_SUBJECT_CODE
+      alternativeLiquidator:
+        description: >-
+
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_ALTERNATIVE_LIQUIDATOR_YN
+      objectionLodged:
+        description: >-
+
+        type: boolean
+        example: false
+        x-table-map: ESE_ESTATES.ESE_OBJECTION_LODGED_YN
+      objectionLodgedDate:
+        x-uuid: 9e87bf81-a827-48b5-8f5d-961ac2371525
+        description: >-
+
+        type: string
+        format: date
+        example: 8/5/2011
+        x-table-map: ESE_ESTATES.ESE_OBJECTION_LODGED_DATE
+      liquidatorName:
+        description: >-
+
+        type: string
+        example: COOPERS & LYBRAND WELLINGTON
+        maxLength: 150
+        x-table-map: ESE_ESTATES.ESE_LIQUIDATOR_NAME
+      objectionWithdrawnDate:
+        x-uuid: 2f3f1d22-1fe4-4f7a-860e-818cbed74998
+        description: >-
+
+        type: string
+        format: date
+        example: 8/10/2011
+        x-table-map: ESE_ESTATES.ESE_OBJECTION_WITHDRAWN_DATE
+      publicExaminationDate:
+        x-uuid: bc6ad67c-7cd0-4547-97c0-9c2a68a68f6b
+        description: >-
+
+        type: string
+        format: date
+        example: 18/5/2011
+        x-table-map: ESE_ESTATES.ESE_PUBLIC_EXAMINATION_DATE
+      liquidatorAppointedDate:
+        x-uuid: ac6ff02f-bccb-42eb-8045-65efd2372c49
+        description: >-
+
+        type: string
+        format: date
+        example: 18/5/2011
+        x-table-map: ESE_ESTATES.ESE_LIQUIDATOR_APPOINTED_DATE
+      earlyDischargeProcess:
+        x-uuid: c1812ac6-5567-4d56-9325-4f629fe8da0e
+        description: >-
+
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_EARLY_DISCHARGE_PROCESS_YN
+      earlyDischHearingDate:
+        x-uuid: 3dc36455-a2d9-418c-a612-bc9849aae353
+        description: >-
+
+        type: string
+        format: date
+        example: 18/5/2016
+        x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_HEARING_DATE
+      earlyDischOutcomeCode:
+        x-uuid: 658270ef-f10a-42a7-a243-3cf1ec0bcae9
+        description: >-
+
+        type: string
+        example: FOR
+        x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_OUTCOME_CODE
+      earlyDischComments:
+        x-uuid: 7fa63444-bf88-4a57-ac10-528657bc8425
+        description: >-
+
+        type: string
+        example: Discharged under section 298 (1) (a)
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_COMMENTS
+      tradingName:
+        description: >-
+
+        type: string
+        example: Example Limited
+        x-table-map: ESE_ESTATES.ESE_TRADING_NAME
+      tradingAddress:
+        description: >-
+
+        type: string
+        example: 1 Some Street, Suburb 1001, City, New Zealand
+        x-table-map: ESE_ESTATES.ESE_TRADING_ADDRESS
+      statisticalReason:
+        description: >-
+            Statistical reason for bankruptcy
+        type: string
+        example: Excessive use of credit facilities
+        x-table-map: ESE_ESTATES.ESE_SRE_ID
+      banReasonId:
+        x-uuid: 05a0dd28-91cb-49da-b5c8-5d0ad673dc2b
+        description: >-
+              Reason for directors ban.
+        type: string
+        example: s385 Companies Act 1993
+        x-table-map: ESE_ESTATES.ESE_BLI_BAN_REASON_ID
+        x-ui-map:
+      petitioningCreditor:
+        description: >-
+            The petitioning creditor
+        type: string
+        example: Sarah Sanders
+        x-table-map: ESE_ESTATES.ESE_CTT_ID_PET_CREDITOR
+      orderTypeAppealed:
+        x-uuid: 808c97a8-cde2-4b42-8025-8a84b089c601
+        description: >-
+
+        type: string
+        example: Restraining Order
+        x-table-map: ESE_ESTATES.ESE_BLI_ID_ORDER_TYPE_APPEALED
+      likelihoodOfDividend:
+        x-uuid: 2cbe1e9c-0e83-40db-a67e-5d4c68dd5975
+        description: >-
+
+        type: number
+        example: Likely to be 20 Cents or More in the Dollar
+        x-table-map: ESE_ESTATES.ESE_BLI_LIKELIHOOD_OF_DIVIDEND
+        x-ui-map:
+      petitionType:
+        description: >-
+
+        type: string
+        example: Instrument Forfeiture Settlement
+        x-table-map: ESE_ESTATES.ESE_PTT_ID
+      policeRegion:
+        description: >-
+
+        type: string
+        example: Bay of Plenty
+        x-table-map: ESE_ESTATES.ESE_PRG_ID
+      court:
+        description: >-
+
+        type: string
+        example: Dannevirke District Court
+        x-table-map: ESE_ESTATES.ESE_CRT_ID
+      industry:
+        description: >-
+
+        type: string
+        example: Photographic Products Machine Operators
+        x-table-map: ESE_ESTATES.ESE_IND_ID
+      estateNumber:
+        description: >-
+
+        type: number
+        example: 136813
+        x-table-map: ESE_ESTATES.ESE_ESTATE_NUMBER
+      debtor:
+        description: >-
+
+        type: number
+        example: Bob Builder
+        x-table-map: ESE_ESTATES.ESE_CTT_ID_DEBTOR
+      estateType:
+        description: >-
+
+        type: number
+        example: Creditor Petition
+        x-table-map: ESE_ESTATES.ESE_EST_ID
+      estateName:
+        description: >-
+
+        type: string
+        example: JIMMERS, Jim
+        x-table-map: ESE_ESTATES.ESE_ESTATE_NAME
+      subTypeCode:
+        x-uuid: b5de27d8-8a8c-4553-b672-1a72d2c6396f
+        description: >-
+
+        type: string
+        enum:
+            - NCP
+            - COP
+            - COS
+        example: COS
+        x-table-map: ESE_ESTATES.ESE_SUB_TYPE_CODE
+      adjudicationAddress:
+        description: >-
+            Address at the time the insolvency was adjudicated
+        type: string
+        example: 1 Evergreen Terrace, Springfield 2005, New Zealand
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_ADJUDICATION_ADDRESS
+      estateCategoryCode:
+        x-uuid: b40adb3c-db16-4c02-94d5-17a2ca1455ea
+        description: >-
+              Bankrputcy
+              Liquidation
+              Proceeds of crime
+
+              To be removed.
+        type: string
+        enum:
+            - B
+            - L
+            - P
+        example: B
+        x-table-map: ESE_ESTATES.ESE_ECAT_CODE
+      statementServicePerformanceStatusCode:
+        x-uuid: dea459a1-9133-4025-b331-ad58804f422f
+        description: >-
+              Statement of service perfromance code - reported back to Treasury.
+        type: string
+        enum:
+          - RJT
+          - ERR
+          - ROP
+          - OPN
+          - PND
+          - CLO
+          - MNT
+        example: OPN
+        x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CODE
+      ringfenceTypeCode:
+        x-uuid: 35567bac-fdc3-452a-811b-1412947d09a3
+        description: >-
+            The security segment / virtual tenancy that the estate sits in.
+        type: string
+        enum:
+              - ITS
+              - POC
+        example: ITS
+        x-table-map: ESE_ESTATES.ESE_RINGFENCE_TYPE_CODE
+      createdBy:
+        description: >-
+            Audit data
+        type: string
+        example: BOBB
+        x-table-map: ESE_ESTATES.ESE_CREATED_BY
+      createdName:
+        description: >-
+            Audit data
+        type: string
+        example: Bob Builder
+        x-table-map: ESE_ESTATES.ESE_CREATED_NAME
+      created:
+        description: >-
+          Audit data
+        type: string
+        example: 1/1/2011
+        x-table-map: ESE_ESTATES.ESE_CREATED
+      lastUpdatedBy:
+        x-uuid: e236d3cd-efcf-4efd-befb-4521a6ce0dc8
+        description: >-
+            Audit data
+        type: string
+        example: BOBB
+        x-table-map: ESE_ESTATES.ESE_LAST_UPDATED_BY
+      lastUpdatedName:
+        x-uuid: 51fac917-f503-445b-a071-940db89a414a
+        description: >-
+          Audit data
+        type: string
+        example: Bob Builder
+        x-table-map: ESE_ESTATES.ESE_LAST_UPDATED_NAME
+      lastUpdated:
+        description: >-
+          Audit data
+        type: string
+        example: 8/10/2016
+        x-table-map: ESE_ESTATES.ESE_LAST_UPDATED
+      version:
+        description: >-
+            Audit data
+        type: number
+        example: 5
+        x-table-map: ESE_ESTATES.ESE_VERSION
+      statementServicePerformanceStatusClosedBy:
+        x-uuid: 3047a94d-4cdd-4830-bd77-58dac8555670
+        description: >-
+              Audit data - Statement of service performanace
+        type: string
+        example: BOBB
+        x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_BY
+      tmrOfficer:
+        description: >-
+              Team member
+        type: string
+        example: SAMP
+        x-table-map: ESE_ESTATES.ESE_TMR_OFFICER_ID
+      tmrOtherOfficer:
+        x-uuid: 3455a1c4-3889-42bf-a378-d64fc343755a
+        description: >-
+            Team member - case manager
+
+            Potentially an estate may be administerted by a secondary officer as a point of contact for the estate.
+        type: number
+        example: TAVISHF
+        x-table-map: ESE_ESTATES.ESE_TMR_OTH_OFFICER_ID
+      tmrCaseMgr:
+        x-uuid: dd8c6af8-8472-4252-9c81-4fa107ae6b22
+        description: >-
+            Team member - case manager
+        type: number
+        example: JENNYH
+        x-table-map: ESE_ESTATES.ESE_TMR_CASE_MGR_ID
+      statementServicePerformanceStatusClosedByName:
+        x-uuid: 3d3d6c86-a649-4479-9e16-c8f6fb92bb48
+        description: >-
+            Audit data
+        type: string
+        example: Bob Builder
+        x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_BY_NAME
+      statementServicePerformanceStatusClosedDate:
+        x-uuid: 457b3327-48e8-4301-a079-5a1af5d43ccd
+        description: >-
+            Audit data
+        type: string
+        example: 9/9/2015
+        x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_DATE
+      currentCharge:
+        description: >-
+            To be removed. Was to do with recoveries. Have other fields and methods for dealing with this now
+            in a more precise manner.
+        type: number
+        example: 141.18
+        x-table-map: ESE_ESTATES.ESE_CURRENT_CHARGE
+      monitoredByCode:
+        x-uuid: 3f5478d9-5358-4c05-be31-0ddc7399e247
+        description: >-
+              If SSP status is monitored, the party responsible for the monitoring, facilitated via tasks.
+
+        type: string
+        enum:
+          - NRG
+          - MGR
+          - OFR
+        example: OFR
+        x-table-map: ESE_ESTATES.ESE_MONITORED_BY_CODE
+      monitoringCategory:
+        description: >-
+               If SSP status is monitored, the classification or type of the monitoring.
+        type: string
+        enum:
+            - CON
+            - THP
+            - REC
+            - OTH
+            - LEG
+        example: THP
+        x-table-map: ESE_ESTATES.ESE_MONITORING_CATEGORY
+      monitoringNotes:
+        description: >-
+          Notes related to estate monitoring.
+        type: string
+        example: funds of >$1k per month being received until March 2011.
+        maxLength: 4000
+        x-table-map: ESE_ESTATES.ESE_MONITORING_NOTES
+        x-ui-map:
+      publicSearchSuppress:
+        x-uuid: 6515ee7d-13dd-4cb7-8d3a-18774f30091e
+        description: >-
+            Boolean indicating if the record needs to be suppressed from public search (on the register).
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_PUBLIC_SEARCH_SUPPRESS_YN
+      highProfile:
+        description: >-
+          Flag to indicate the estate is a high profile estate, implicitly meaning that discretion and caution are required
+          in all dealings related to it.
+        type: string
+        example: true
+        x-table-map: ESE_ESTATES.ESE_HIGH_PROFILE_YN
+      itsContact:
+        description: >-
+          Special contact for this estate, if applicable - usually due to hgh profile and or high risk.
+        type: string
+        maxLength: 150
+        example: All media contact to Les Currie Hamilton Office
+        x-table-map: ESE_ESTATES.ESE_ITS_CONTACT
+      contactRestrictionCode:
+        x-uuid: 6dab2c75-b99e-4e33-92c0-a759b07cdcbc
+        description: >-
+
+        type: string
+        example: UNR
+        x-table-map: ESE_ESTATES.ESE_CONTACT_RESTRICTION_CODE
+      restrictionDetails:
+        description: >-
+            Free test reason explaining the specific nature of the restriction on contact.
+        type: string
+        example: only contact is allowed to david harte OA auckland 099164563 - file note on online expalining why
+        x-table-map: ESE_ESTATES.ESE_RESTRICTION_DETAILS
+      riskIssues:
+        description: >-
+            Flag indicating if there are unusual risks associated to this estate
+        type: boolean
+        example: true
+        x-table-map: ESE_ESTATES.ESE_RISK_ISSUES_YN
+        x-ui-map:
+      issueDetails:
+        description: >-
+            Free text description of risk(s).
+        type: string
+        example: Gang affiliations with Hastings Chapter of Highway 61 motorcycle gang.
+        x-table-map: ESE_ESTATES.ESE_ISSUE_DETAILS
+      adjudicationDate:
+        description: >-
+            Date adjudicated
+        type: string
+        format: date
+        example: 07/08/69
+        x-table-map: ESE_ESTATES.ESE_ADJUDICATION_DATE_TIME
+      courtNumber:
+        description: >-
+          Courts case number
+        type: string
+        example: CIV-2009-404-004272
+        x-table-map: ESE_ESTATES.ESE_COURT_NUMBER
+
+  NewEstateRecord:
+    x-uuid: 54a37d7d-5969-468b-a779-04eca9c63279
+    x-uuid: c7857958-7902-49c6-9d8e-101225db2672
+      required:
+      - teamAssigned
+      - adjudicationAddress
+      - adjudicationDate
+      - estateFirstName
+
+      properties:
+        referralType:
+          type: string
+          example: Insolvent Transactions
+          x-table-map: RFL_REFERRALS.IST_ID.ISSUE_TYPE
+        estateFirstName:
+          x-uuid: a0e2a52f-ef71-4a2d-9af9-a06cb65a93b5
+          description: >-
+              The first name of the person going through an insolvency procedure.
+              ** Important ** to note that this may also be the ONLY name as last name is not mandatory.
+          type: string
+          example:  Leizel
+          maxLength: 200
+          x-table-map: ESE_ESTATES.ESE_ESTATE_FIRST_NAME
+        estateLastName:
+          x-uuid: 93fafec8-e426-466d-854a-29a565a0d73e
+          description: >-
+              The last name of the person going through the insolvency procedure.
+          type: string
+          example: Owens
+          maxLength: 200
+          x-table-map: ESE_ESTATES.ESE_ESTATE_LAST_NAME
+          x-ui-map:
+        estateMiddleNames:
+          x-uuid: e5e02480-1d3b-4777-9c28-577289f12a46
+          description: >-
+              The middle name(s) of the person going through the insolvency procedure. Expected to be separated by spaces
+          type: string
+          example: Robina Dorian Renata
+          maxLength: 200
+          x-table-map: ESE_ESTATES.ESE_ESTATE_MIDDLE_NAMES
+        estateOrganisationName:
+          x-uuid: d9b40a03-2db1-499c-998d-8d0bd621ac47
+          description: >-
+              Where the insolvency relates to an organisation, the name of that organisation.
+          type: string
+          example: Tarquis Holdings Limited
+          maxLength: 200
+          x-table-map: ESE_ESTATES.ESE_ESTATE_ORGANISATION_NAME
+        enforcement:
+          description: >-
+              Estate has been referred for enforcement. Will mean that contact centre staff will be more prudent
+               about disclosure related to this estate.
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_ENFORCEMENT_YN
+        profileWarnShown:
+          x-uuid: 31d56bc4-194f-4c9a-bf8b-549a0aaf482e
+          description: >-
+              Trigger for the GUI to nag the user due to profiling not having been
+              completed.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_PROFILE_WARN_SHOWN_YN
+        income:
+          description: >-
+              The annual income of the insolvent party.
+          type: number
+          example: 26518
+          x-table-map: ESE_ESTATES.ESE_INCOME
+        predicateOffences:
+          description: >-
+                  Offences predicating the insolvency (if any).
+          type: string
+          example: 1.  Possession of Cannabis for the purpose of supply
+                   2.  Cultvating Cannabis
+                   3.  Possesion of equipment to cultivate cannabis
+          maxLength: 500
+          x-table-map: ESE_ESTATES.ESE_PREDICATE_OFFENCES
+        employmentStatDetail:
+          x-uuid: 2d5348c9-aacd-4590-a6bf-3f6969375d94
+          description: >-
+              == Not currently in use ==
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_EMPLOYMENT_STAT_DETAIL
+        mainCauseBkrptcyDetail:
+          x-uuid: bbf468ac-61f3-42a0-bbe8-c31b6618fa38
+          description: >-
+               == Not currently in use ==
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_MAIN_CAUSE_BKRPTCY_DETAIL
+        cntrCauseBkrptcyDetail:
+          x-uuid: 704fdf83-b501-4ae3-83ee-93e19260c05f
+          description: >-
+                 == Not currently in use ==
+          type: string
+          x-table-map: ESE_ESTATES.ESE_CNTR_CAUSE_BKRPTCY_DETAIL
+        ethnicityAsianDetail:
+          x-uuid: 8c3ae0d0-dc02-4873-b6a3-9ba92d289d10
+          description: >-
+              Detail of Asian ethnicity
+          type: string
+          example: Laos
+          x-table-map: ESE_ESTATES.ESE_ETHN_ASIAN_DETAIL
+        permanentPubDisplay:
+          x-uuid: 97c47e4a-f323-4d6e-b3b7-4143688d8e03
+          description: >-
+              For multiple insolvents - indicates that this record will be on the register
+              permanantly.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_PERMANENT_PUB_DISPLAY_YN
+        delayedDischarge:
+          description: >-
+            Normal discharge is driven by adjudication and filing of statement of affairs. A judge may vary this.
+          type: string
+          example: 25/05/17
+          x-table-map: ESE_ESTATES.ESE_DELAYED_DISCHARGE
+        delayedDischargeReset:
+          x-uuid: b7d612f4-657a-4978-bf48-05b401598c9a
+          description: >-
+               === Look at old FS to determine when this filed would be used. ===
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_DELAYED_DISCHARGE_RESET
+        ethnPacificDetail:
+          x-uuid: beef1d1d-335c-461b-8d9d-4044a1aae48c
+          description: >-
+              Detail of pacifica ethnicity
+          type: string
+          example: Tongam
+          x-table-map: ESE_ESTATES.ESE_ETHN_PACIFIC_DETAIL
+        ethnEuropeanDetail:
+          x-uuid: f3d15d28-bb12-4efe-a866-b786d1036290
+          description: >-
+               Detail of european ethnicity
+          type: string
+          example: Scottish
+          x-table-map: ESE_ESTATES.ESE_ETHN_EUROPEAN_DETAIL
+          x-ui-map:
+        ethnOtherDetail:
+          x-uuid: 55aea545-5442-47ca-b261-73e7dceeae1d
+          description: >-
+
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_ETHN_OTHER_DETAIL
+          x-ui-map:
+        autoConsentPerm:
+          x-uuid: 3e6a4929-eaf0-408c-91f2-aa25ee443b1a
+          description: >-
+                Indicates if travel approval has been granted.
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_AUTO_CONSENT_PERM_YN
+        currentEmploymentDetail:
+          x-uuid: b08e09af-7ab5-4f4b-8842-fb0b16dc39af
+          description: >-
+            Further detail on employment situation.
+          type: string
+          example: full time employment
+          maxLength: 1000
+          x-table-map: ESE_ESTATES.ESE_CUR_EMPLOYMENT_DETAIL
+        employmentConsentGranted:
+          x-uuid: e1375a94-f606-46ae-938b-04f7040c266a
+          description: >-
+
+          type: number
+          example: 12
+          maxLength: 22
+          x-table-map: ESE_ESTATES.ESE_EMPLOYMENT_CONSENT_GRANTED
+        dischargeType:
+          description: >-
+            The reason for discharge
+          type: number
+          example: Early Discharge
+          x-table-map: ESE_ESTATES.ESE_BLI_ID_DISCHARGE_TYPE
+        definedIssueType:
+          x-uuid: d13fc941-c25e-41cf-b47d-5336e8a0c184
+          description: >-
+            Issue description
+          type: string
+          example: Error Identified
+          x-table-map: ESE_ESTATES.ESE_BLI_ID_DEFINED_ISSUE_TYPE
+        employmentStatus:
+          description: >-
+              The current employment status of the insolvent party.
+          type: string
+          example: Unpaid family worker
+          x-table-map: ESE_ESTATES.ESE_ESA_ID
+        completionDetails:
+          description: >-
+            Final 'state' of insolvency procedure.
+          type: string
+          example: Completed - Paid in Part
+          x-table-map: ESE_ESTATES.ESE_BLI_ID_COMPLETION_DETAILS
+        irdOffice:
+          description: >-
+              The IRD office dealing with the insolvency - to be removed due to IRD centralising
+              CC functions - confirm with JH.
+          type: number
+          example: Napier
+          x-table-map: ESE_ESTATES.ESE_IRO_ID
+        annulmentType:
+          description: >-
+            The annulment type
+          type: string
+          example: Completed - Paid in Part
+          x-table-map: ESE_ESTATES.ESE_BLI_ID_ANNULMENT_TYPE
+        teamAssigned:
+          description: >-
+              The team managing the estate
+          type: number
+          example: Hamilton Complex
+          x-table-map: ESE_ESTATES.ESE_TEM_ASSIGNED_ID
+        groupAssignedOffice:
+          x-uuid: e9675665-2360-4d89-aa51-4b02ca69bdaf
+          description: >-
+            The group managing the estate
+          type: number
+          example: Wellington
+          x-table-map: ESE_ESTATES.ESE_GRP_ASSIGNED_OFFICE_ID
+        appliedWeighting:
+          description: >-
+
+          type: number
+          example: 2
+          x-table-map: ESE_ESTATES.ESE_APPLIED_WEIGHTING
+        insolvencySearchable:
+          description: >-
+            Controls whether estate appears in search results
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_INSOLVENCY_SEARCHABLE_YN
+        maxWeightings:
+          description: >-
+
+          type: number
+          example: 7.5
+          x-table-map: ESE_ESTATES.ESE_MAX_WEIGHTINGS
+        firstReportSent:
+          x-uuid: e6a1850f-6c44-4aa1-bdf9-65cfb787927d
+          description: >-
+              The date the first report was sent to creditors.
+          type: string
+          format: date
+          example: 15/05/09
+          x-table-map: ESE_ESTATES.ESE_FIRST_RPT_SENT
+        sixMonthReportSent:
+          x-uuid: f6353e84-89e0-4b7e-a077-736eeb392b50
+          description: >-
+            The date the 6 month report was sent to creditors.
+          type: string
+          format: date
+          example: 15/05/09
+          x-table-map: ESE_ESTATES.ESE_6MTH_RPT_SENT
+        underOldLegislation:
+          x-uuid: 48e63791-1ef1-4daa-bab8-9c5853e1ac3b
+          description: >-
+              Flag to specify insolvency governed b older legislation.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_UNDER_OLD_LEGISLATION_YN
+        sioSuperAutoPay:
+          x-uuid: 6b4a1421-25ab-4f02-a60b-a6613dd6d37d
+          description: >-
+              Flag to indicate if...
+          type: boolean
+          example:
+          x-table-map: ESE_ESTATES.ESE_SIO_SUPER_AUTO_PAY_YN
+          x-ui-map:
+        oaCommReceived:
+          x-uuid: af5763b1-920f-4414-b610-c3baec0f6d6f
+          description: >-
+              Not sure
+          type: boolean
+          example:
+          x-table-map: ESE_ESTATES.ESE_OA_COMM_RECEIVED
+        sioAppFeePaid:
+          x-uuid: 30904a50-d0ca-4ae8-b768-44c765016c31
+          description: >-
+            Has the application been paid?
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_SIO_APP_FEE_PAID
+        trustAccountUsed:
+          x-uuid: e68cfa92-257a-42e0-bd20-80214734b435
+          description: >-
+              The trust account used for the insolvency
+
+              == Not currently in use ==
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_TRUST_ACCOUNT_USED
+        dischargeCertSent:
+          x-uuid: f43786ff-60e5-43ad-9d7b-5b145e8e207e
+          description: >-
+              Date that the discharge certificate was sent out to the insolvent.
+          type: string
+          format: date
+          example: 05/03/11
+          x-table-map: ESE_ESTATES.ESE_DISCHARGE_CERT_SENT
+        estimatedCompletionDate:
+          x-uuid: df9116f3-8e20-4396-b022-2718c9e53e4d
+          description: >-
+              The data the officer estimates the insolvency will be complete
+          type: string
+          example: 14/04/19
+          x-table-map: ESE_ESTATES.ESE_ESTIMATED_COMPLETION_DATE
+        petitionFilingDate:
+          x-uuid: 94a92f5d-8289-415c-896d-8eae7d3b0364
+          description: >-
+              The date that the petition was filed
+          type: string
+          example: 1/02/17
+          x-table-map: ESE_ESTATES.ESE_PETITION_FILING_DATE
+        chargeMethodCode:
+          x-uuid: 296c3b16-46a5-487a-ac85-6aba0ef28731
+          description: >-
+            Denoted the cost recovery method
+          type: string
+          enum:
+              - TIM
+              - COM
+          example: TIM
+          x-table-map: ESE_ESTATES.ESE_CHARGE_METHOD_CODE
+        petitionServiceDate:
+          x-uuid: f4b4776a-9db6-458d-9413-48a99c3e8f25
+          description: >-
+              If applicable, the date that the petition was served on the insolvent party.
+          type: string
+          example: 1/02/17
+          x-table-map: ESE_ESTATES.ESE_PETITION_SERVICE_DATE
+        ppoAmountDue:
+          x-uuid: 891645a3-4a4f-4936-9b50-69cc7bff7187
+          description: >-
+              Amount due under Pecuniary Penalty Order (CPMU only)
+          type: number
+          example: 980000
+          x-table-map: ESE_ESTATES.ESE_PPO_AMOUNT_DUE
+        ppoPaymentDueDate:
+          x-uuid: 12a1b3bb-ce7c-4abe-92ca-be65a9336e95
+          description: >-
+              Expected due date for amount due under Pecuniary Penalty Order (CPMU only)
+          type: string
+          format: date
+          example: 1/02/17
+          x-table-map: ESE_ESTATES.ESE_PPO_PAYMENT_DUE_DATE
+        debtorTradingStatus:
+          x-uuid: 98d3a0d8-f224-489d-918a-9b1e2f615c49
+          description: >-
+                Is the debtor still trading
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_DEBTOR_TRADING_STATUS_YN
+        startedTradingDate:
+          x-uuid: 597c17a1-1b14-4502-8b31-5a642868739f
+          description: >-
+              Date insolvent party began trading
+          type: string
+          format: date
+          example: 5/5/2012
+          x-table-map: ESE_ESTATES.ESE_STARTED_TRADING_DATE
+        ceasedTradingDate:
+          x-uuid: 014da269-6fcf-4f66-85f3-4242674f5d9e
+          description: >-
+              Date insolvent party ceased trading
+          type: string
+          format: date
+          example: 8/5/2017
+          x-table-map: ESE_ESTATES.ESE_CEASED_TRADING_DATE
+        finalAccount:
+          description: >-
+              Boolean indicating whether the estate has had a final account.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_YN
+        finalAccountSet:
+          x-uuid: e48a9d0b-c570-4b7c-aa34-5173f97ca29b
+          description: >-
+              Date of final account.
+          type: string
+          example: 13/9/2013
+          x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_SET
+        finalAccountSetTmr:
+          x-uuid: ac5714f4-86cd-4926-98d3-daade7b552f5
+          description: >-
+                Team member who perfromed the final account.
+          type: number
+          example: SAMP
+          x-table-map: ESE_ESTATES.ESE_FINAL_ACCOUNT_SET_TMR_ID
+        createdFromWizard:
+          x-uuid: 3dca6b63-0fef-489c-8ce8-9d51013144d4
+          description: >-
+                Flag to indicate estate was created online from a statement of affairs.
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_CREATED_FROM_WIZARD_YN
+        soaReceivedNrg:
+          x-uuid: 04ff61ea-a8f0-40eb-ac35-b7e887282605
+          description: >-
+              Flag to indicate SOA received by NRG
+          type: string
+          example: false
+          x-table-map: ESE_ESTATES.ESE_SOA_RECEIVED_NRG_YN
+        soaReceivedNrgCreated:
+          x-uuid: 29e52358-54f0-4701-becb-15681a065951
+          description: >-
+                Date SOA received by NRG
+          type: string
+          example: 7/12/2017
+          x-table-map: ESE_ESTATES.ESE_SOA_RECEIVED_NRG_CREATED
+        soaReceivedNrgCreatedBy:
+          x-uuid: 7f0caf4d-59a0-4659-a63c-4f51365660d1
+          description: >-
+              User that received / processed SOA
+          type: string
+          example: JIMJ
+          x-table-map: ESE_ESTATES.ESE_SOA_REC_NRG_CREATED_BY
+        soaReceivedNrgCreatedName:
+          x-uuid: 9b4f216d-8067-49bd-8b2e-3ee54a276734
+          description: >-
+              User that received / processed SOA
+          type: string
+          example: Jim Jimmers
+          x-table-map: ESE_ESTATES.ESE_SOA_REC_NRG_CREATED_NAME
+        keyDataFromBankrupt:
+          x-uuid: ad7ad5c1-7b04-4fb4-962c-c6f8f6b9ce4b
+          description: >-
+               Used to influence the measure processing time.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_KEY_DATA_FROM_BANKRUPT_YN
+        advertisingStatusCode:
+          x-uuid: 3f7268d1-1e1c-44a9-89a9-cea90bba0636
+          description: >-
+                Status of the estate as regards advertising.
+          type: string
+          enum:
+                - TBA
+                - ADV
+                - CAN
+          example:
+          x-table-map: ESE_ESTATES.ESE_ADVERTISING_STATUS_CODE
+        moreInformation:
+          description: >-
+              Free text description to be included on register.
+          type: string
+          example: Attempts by the Official Assignee to physically locate the bankrupt at her last known address were unsuccessful.
+                   Investigations conducted by the Official Assignee through the public accessible databases did not reveal any assets
+                   which would be of value to the bankrupt's creditors. The Official Assignee has decided to close the administration
+                   of the bankrupt's estate and Ms Cai will remain bankrupt until such time as the Official Assignee receives a
+                   satisfactorily completed Statement of Affairs.
+
+                   If you are owed money you can assist the investigation by registering a claim in this estate. You may register a claim
+                   in this estate on-line via our website or you can call our Contact Centre on 0508 467 658 to arrange for a claim form to
+                   be sent to you. The claim form should be lodged as soon as possible.
+
+                   Should you have information or if you have any questions, please contact 0508 467 658 as soon as possible.
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_MORE_INFORMATION
+        moreInfoCreatedBy:
+          x-uuid: 16136924-4b3f-41fe-bfa0-7a9114bc62a8
+          description: >-
+             Audit data.
+          type: string
+          example: EMMYE
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED_BY
+        moreInfoCreatedName:
+          x-uuid: fb7f7437-3924-475a-807b-9f409fda9938
+          description: >-
+
+          type: string
+          example:  Emmy Elvier
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED_NAME
+        moreInfoUpdated:
+          x-uuid: 14c2b289-7af5-4cd6-a921-40741de5f60f
+          description: >-
+            Audit data.
+          type: string
+          example: 4/11/2011
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED
+        moreInfoCreated:
+          x-uuid: f9aae269-a6ce-4933-9068-6b5c2a392d11
+          description: >-
+              Audit data.
+          type: string
+          format: date
+          example:  22/1/2011
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_CREATED
+        moreInfoUpdatedBy:
+          x-uuid: f22b88c0-8a9a-45f9-a173-6cd51a7e65fe
+          description: >-
+            Audit data.
+          type: string
+          example: BILLYB
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED_BY
+        moreInfoUpdatedName:
+          x-uuid: df9f29ae-1f87-47ec-b7e0-1fdfc948da11
+          description: >-
+              Audit data
+          type: string
+          example: Billy Barker
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_UPDATED_NAME
+          x-ui-map:
+        moreInfoStatusCode:
+          x-uuid: 26a8678e-dfbe-4e3c-ab3c-b04874043c70
+          description: >-
+              Free format seection (more info)
+              Draft - to Apprved. Once approved appears in the register for the public to view. Second entry point is via my claims.
+          type: string
+          enum:
+              - ARF
+              - DRF
+          example:
+          x-table-map: ESE_ESTATES.ESE_MORE_INFO_STATUS_CODE
+        bannedDirector:
+          description: >-
+              Is the insolvent a banned director?
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_BANNED_DIRECTOR_YN
+        banEndDate:
+          x-uuid: 3cbfc8b0-2bb0-4692-b886-22792175d2a4
+          description: >-
+                Directors ban end date.
+          type: string
+          format: date
+          example: 15/4/2019
+          x-table-map: ESE_ESTATES.ESE_BAN_END_DATE
+        prohibitionOrder:
+          description: >-
+                Free text description of the prohibition order.
+          type: string
+          example: Mr Simpson has been prohibited from being a director or manager of a company for five years from 24 March 2009.
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_PROHIBITION_ORDER
+        gazetteNumber:
+          description: >-
+              Issue number  procedure published in gazette.
+          type: string
+          example: 44
+          x-table-map: ESE_ESTATES.ESE_GAZETTE_NUMBER
+        gazetteDate:
+          description: >-
+            Date procedure published in gazette.
+          type: string
+          format: date
+          example: 1/1/2016
+          x-table-map: ESE_ESTATES.ESE_GAZETTE_DATE
+        gazettePage:
+          description: >-
+              Page number procedure published on in gazette.
+          type: string
+          example:
+          x-table-map: ESE_ESTATES.ESE_GAZETTE_PAGE
+          x-ui-map:
+        companyNumber:
+          description: >-
+
+          type: number
+          example: 16531555
+          x-table-map: ESE_ESTATES.ESE_COMPANY_NUMBER
+        nzbn:
+          description: >-
+                New Zealand Business Number of entity where applicable
+          type: number
+          example: 186651351
+          x-table-map: ESE_ESTATES - NEW
+        companyInReceivership:
+          x-uuid: f9a6b481-b877-437d-8370-c7a5b6482289
+          description: >-
+              Boolean indicating if the comapny is in receivership
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_COMPANY_IN_RECEIVERSHIP_YN
+        receiverAppointedDate:
+          x-uuid: 41fe0afe-63a1-4cab-abd5-458f2437c9fd
+          description: >-
+              Date appointed
+          type: string
+          format: date
+          example: 8/3/2017
+          x-table-map: ESE_ESTATES.ESE_RECEIVER_APPOINTED_DATE
+        appointedBy:
+          description: >-
+            The party appointing the receiver
+          type: string
+          example: Spicer & Associates Limited
+          x-table-map: ESE_ESTATES.ESE_APPOINTED_BY
+        initiatedByCode:
+          x-uuid: 40e6b398-d50e-4d87-aa38-15c24a381bc4
+          description: >-
+              Who the insolvency was initiated by
+          type: string
+          enum:
+            - INA
+            - OGA
+            - SFO
+            - POL
+          example: INA
+          x-table-map: ESE_ESTATES.ESE_INITIATED_BY_CODE
+        enforcementCountryCode:
+          x-uuid: 49b7e3a7-3466-4a80-a3f2-869866ea7338
+          description: |
+                   Treat this as an enumerator.
+
+                   Loosely mapped to the ISO4217 country codes. Currently updated infrequently.
+
+                   **Suggested UI implementation:** Implement as typeahead search. Big lists of enums suck.
+          type: string
+          example: NZD
+          externalDocs:
+            description: Current ISO list of codes (as xml)
+            url: https://www.currency-iso.org/dam/downloads/lists/list_one.xml
+          x-table-map: ESE_ESTATES.ESE_ENFORCEMENT_COUNTRY_CODE
+        governmentAgency:
+          description: >-
+              Government agency party to insolvency
+          type: string
+          example: NZ Customs
+          x-table-map: ESE_ESTATES.ESE_GOVERNMENT_AGENCY
+        thirdPartyInterests:
+          x-uuid: 8d8aac82-1b6f-4a48-b29e-149ff6a1e7ca
+          description: >-
+                Applies to CPMU estates. Where siezed assets may have 3rd party interests.
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_THIRD_PARTY_INTERESTS_YN
+        gstNumber:
+          description: >-
+              GST number of insolvent
+          type: string
+          example: 000-000-000
+          x-table-map: ESE_ESTATES.ESE_GST_NUMBER
+        gstBasisCode:
+          x-uuid: 1a7bce69-ebfa-4bfe-8c11-3c4a3720927f
+          description: >-
+             Invoice or payment - impacts on tax refund applications.
+          type: string
+          enum:
+              - INV
+              - PAY
+          example: PAY
+          x-table-map: ESE_ESTATES.ESE_GST_BASIS_CODE
+        gstStatusCode:
+          x-uuid: 1ddc15c7-3ad7-42ff-af63-7f9d2ab8099f
+          description: >-
+                GST registrations status.
+          type: string
+          enum:
+            - Y
+            - N
+            - C
+          example: C
+          x-table-map: ESE_ESTATES.ESE_GST_STATUS_CODE
+        gstCancelledDate:
+          x-uuid: f7293dde-e64c-4124-b2c1-7cd173200325
+          description: >-
+
+          type: string
+          format: date
+          example: 18/7/2014
+          x-table-map: ESE_ESTATES.ESE_GST_CANCELLED_DATE
+        irdNumber:
+          description: >-
+              IRD number of insolvent party
+          type: string
+          example: 002-853-709
+          x-table-map: ESE_ESTATES.ESE_IRD_NUMBER
+        irdContactName:
+          x-uuid: 97df2d7b-0963-4beb-864f-c666b9252fd3
+          description: >-
+              Free text not rlating to IRD contact
+          type: string
+          example: Nil return p/e 31/1/09
+          x-table-map: ESE_ESTATES.ESE_IRD_CONTACT_NAME
+        nextGstPeriodEndDate:
+          x-uuid: 656af697-fa95-480e-87be-aac473e6d337
+          description: >-
+              When the next GST period ends
+          type: string
+          format: date
+          example: 31/12/10
+          x-table-map: ESE_ESTATES.ESE_NEXT_GST_PERIOD_END_DATE
+        reasonAtAdjudication:
+          x-uuid: 7df2d72b-b118-4adc-8a30-f8ceed848a14
+          description: >-
+              Reasons given for insolnvecy at adjudication date
+          type: string
+          example: Too highly leveraged, property crash
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_REASON_AT_ADJUDICATION
+        bankruptcyTypeCode:
+          x-uuid: 23efb1f9-067e-4ee4-a925-f1ba472917f9
+          description: >-
+
+          type: string
+          enum:
+              - COS
+              - BUS
+          example: BUS
+          x-table-map: ESE_ESTATES.ESE_BANKRUPTCY_TYPE_CODE
+        occupationAtAdjudication:
+          x-uuid: 72383b89-ddba-4788-b980-0c22d0d8129a
+          description: >-
+              Occupation given at date of adjudication
+          type: string
+          example: Sales and Marketing Managers
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_OCCUPATION_AT_ADJUDICATION
+        gender:
+          description: >-
+                  Gender of bankrupt.
+          type: string
+          enum:
+                - Male
+                - Female
+                - Trans male
+                - Trans female
+                - Gender non-conforming
+          example: Male
+          x-table-map: ESE_ESTATES.ESE_GENDER
+        previouslyBankrupt:
+          description: >-
+              Flag indicating that this is not the first bankruptcy procedure for the person involved.
+          type: string
+          example: false
+          x-table-map: ESE_ESTATES.ESE_PREVIOUSLY_BANKRUPT_YN
+        numberOfCreditCards:
+          x-uuid: b023f638-571a-48e0-8bf9-b77e39526057
+          description: >-
+              The number of credit cards held by the insolvent.
+          type: number
+          example: 2
+          x-table-map: ESE_ESTATES.ESE_NUMBER_OF_CREDIT_CARDS
+        creditCardDebtAmount:
+          x-uuid: b30fc8f9-f5e2-450c-ab25-df98a58be9ec
+          description: >-
+            Credit card debt at admittance
+          type: number
+          example: 14763.88
+          x-table-map: ESE_ESTATES.ESE_CREDIT_CARD_DEBT_AMOUNT
+        dischargeRefusedByCourt:
+          x-uuid: b672df4e-d393-4a4b-85ae-c827b69e5218
+          description: >-
+                IN some circumstances, a discharge may have been refused by the courts.
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_DISCH_REFUSED_BY_COURT_YN
+        suspended:
+          description: >-
+            Is the discharge of the estate suspended? Usually due due to investigative activity.
+
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_SUSPENDED_YN
+        reapplyForDischargeAfter:
+          x-uuid: 310d83a3-12c6-43cd-88b4-eb1c9a9344da
+          description: >-
+              The earliest date at which a discharge may be applied for.
+          type: string
+          format: date
+          example: 8/11/2020
+          x-table-map: ESE_ESTATES.ESE_REAPPLY_FOR_DISC_AFTER
+        dischargeDate:
+          description: >-
+
+          type: string
+          format: date
+          example: 8/11/2020
+          x-table-map: ESE_ESTATES.ESE_DISCHARGE_DATE
+        conditionExpiryDate:
+          x-uuid: d23a4018-718d-4592-93dc-bde5db504ff0
+          description: >-
+                Date at which conditions relating to discharge expire.
+          type: string
+          format: date
+          example: 21/3/2019
+          x-table-map: ESE_ESTATES.ESE_CONDITION_EXPIRY_DATE
+        recordsDestructionDate:
+          x-uuid: 7d60a072-a084-488a-995a-9b9ae5840abc
+          description: >-
+
+          type: string
+          format: date
+          example: 21/3/2019
+          x-table-map: ESE_ESTATES.ESE_RECORDS_DESTRUCTION_DATE
+        conditions:
+          description: >-
+              Conditions associated with discharge
+          type: string
+          example: The conditions were
+                    (a) public examination
+                    (b) unable to be involved with a business
+                    (c) be employed by family
+                    (d) not allowed to be a director.
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_CONDITIONS
+        annulmentProcess:
+          description: >-
+                Used as a warning - dividend payment or disposal of assets.
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_PROCESS_YN
+        annulmentHearingDate:
+          x-uuid: 1e2ecf47-fc1e-4138-ac54-5422c227c193
+          description: >-
+                Date of annulment hearing
+          type: string
+          example: 18/6/2018
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_HEARING_DATE
+        annulmentInjunction:
+          description: >-
+
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_INJUNCTION_YN
+        annulmentComments:
+          description: >-
+
+          type: string
+          example: Only one creditor - paid
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_COMMENTS
+        annulmentOutcomeCode:
+          x-uuid: 7fd72e4d-8903-4dfc-8224-b3785bdd0c0e
+          description: >-
+
+          type: string
+          example: FOR
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_OUTCOME_CODE
+        annulmentDate:
+          description: >-
+
+          type: string
+          format: date
+          example: 25/1/2017
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_DATE
+        annulmentAdStatusCode:
+          x-uuid: ce6e2703-7da0-4248-a3ee-7f10aa99c32a
+          description: >-
+
+          type: string
+          enum:
+              - Y
+              - N
+              - T
+          example: Y
+          x-table-map: ESE_ESTATES.ESE_ANNULMENT_AD_STATUS_CODE
+        appealLodged:
+          description: >-
+
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_APPEAL_LODGED_YN
+        appealDate:
+          description: >-
+
+          type: string
+          format: date
+          example: 7/12/2016
+          x-table-map: ESE_ESTATES.ESE_APPEAL_DATE
+        appealSubjectCode:
+          x-uuid: 8a4d8b84-96d3-4078-b86a-3dbf9cec3fbc
+          description: >-
+
+          type: string
+          enum:
+              - CON
+              - BTH
+              - ORD
+          example: CON
+          x-table-map: ESE_ESTATES.ESE_APPEAL_SUBJECT_CODE
+        alternativeLiquidator:
+          description: >-
+
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_ALTERNATIVE_LIQUIDATOR_YN
+        objectionLodged:
+          description: >-
+
+          type: boolean
+          example: false
+          x-table-map: ESE_ESTATES.ESE_OBJECTION_LODGED_YN
+        objectionLodgedDate:
+          x-uuid: ab8e32ed-f901-49d5-b7db-61f44a4115cd
+          description: >-
+
+          type: string
+          format: date
+          example: 8/5/2011
+          x-table-map: ESE_ESTATES.ESE_OBJECTION_LODGED_DATE
+        liquidatorName:
+          description: >-
+
+          type: string
+          example: COOPERS & LYBRAND WELLINGTON
+          maxLength: 150
+          x-table-map: ESE_ESTATES.ESE_LIQUIDATOR_NAME
+        objectionWithdrawnDate:
+          x-uuid: f67d01d9-28d5-48ec-aa10-4a9302459051
+          description: >-
+
+          type: string
+          format: date
+          example: 8/10/2011
+          x-table-map: ESE_ESTATES.ESE_OBJECTION_WITHDRAWN_DATE
+        publicExaminationDate:
+          x-uuid: 8c6c18ca-b845-4b74-9011-f08751a4c43b
+          description: >-
+
+          type: string
+          format: date
+          example: 18/5/2011
+          x-table-map: ESE_ESTATES.ESE_PUBLIC_EXAMINATION_DATE
+        liquidatorAppointedDate:
+          x-uuid: 18103847-42cb-43c5-b70b-e8be8350affe
+          description: >-
+
+          type: string
+          format: date
+          example: 18/5/2011
+          x-table-map: ESE_ESTATES.ESE_LIQUIDATOR_APPOINTED_DATE
+        earlyDischargeProcess:
+          x-uuid: 6b924855-ff86-4d04-ba40-2cc2aaaaa162
+          description: >-
+
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_EARLY_DISCHARGE_PROCESS_YN
+        earlyDischHearingDate:
+          x-uuid: 9b08a585-421e-47d1-b300-10073ef306bd
+          description: >-
+
+          type: string
+          format: date
+          example: 18/5/2016
+          x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_HEARING_DATE
+        earlyDischOutcomeCode:
+          x-uuid: 2106ab45-1316-426e-a7e6-92cef1157c08
+          description: >-
+
+          type: string
+          example: FOR
+          x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_OUTCOME_CODE
+        earlyDischComments:
+          x-uuid: 7f0ee26f-3ef2-47a5-b1bb-fdc6cdeb5be8
+          description: >-
+
+          type: string
+          example: Discharged under section 298 (1) (a)
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_EARLY_DISCH_COMMENTS
+        tradingName:
+          description: >-
+
+          type: string
+          example: Example Limited
+          x-table-map: ESE_ESTATES.ESE_TRADING_NAME
+        tradingAddress:
+          description: >-
+
+          type: string
+          example: 1 Some Street, Suburb 1001, City, New Zealand
+          x-table-map: ESE_ESTATES.ESE_TRADING_ADDRESS
+        statisticalReason:
+          description: >-
+              Statistical reason for bankruptcy
+          type: string
+          example: Excessive use of credit facilities
+          x-table-map: ESE_ESTATES.ESE_SRE_ID
+        banReasonId:
+          x-uuid: 0e224a88-3d68-4c77-af40-681caef4e197
+          description: >-
+                Reason for directors ban.
+          type: string
+          example: s385 Companies Act 1993
+          x-table-map: ESE_ESTATES.ESE_BLI_BAN_REASON_ID
+        petitioningCreditor:
+          description: >-
+              The petitioning creditor
+          type: string
+          example: Sarah Sanders
+          x-table-map: ESE_ESTATES.ESE_CTT_ID_PET_CREDITOR
+        orderTypeAppealed:
+          x-uuid: 8ddd3c86-de0a-4fe3-ac9e-2abc7454a815
+          description: >-
+
+          type: string
+          example: Restraining Order
+          x-table-map: ESE_ESTATES.ESE_BLI_ID_ORDER_TYPE_APPEALED
+        likelihoodOfDividend:
+          x-uuid: 409d99f0-b1d2-4f0e-a3f1-f7340f465ba1
+          description: >-
+
+          type: number
+          example: Likely to be 20 Cents or More in the Dollar
+          x-table-map: ESE_ESTATES.ESE_BLI_LIKELIHOOD_OF_DIVIDEND
+        petitionType:
+          description: >-
+
+          type: string
+          example: Instrument Forfeiture Settlement
+          x-table-map: ESE_ESTATES.ESE_PTT_ID
+        policeRegion:
+          description: >-
+
+          type: string
+          example: Bay of Plenty
+          x-table-map: ESE_ESTATES.ESE_PRG_ID
+        court:
+          description: >-
+
+          type: string
+          example: Dannevirke District Court
+          x-table-map: ESE_ESTATES.ESE_CRT_ID
+        industry:
+          description: >-
+
+          type: string
+          example: Photographic Products Machine Operators
+          x-table-map: ESE_ESTATES.ESE_IND_ID
+        estateNumber:
+          description: >-
+
+          type: number
+          example: 136813
+          x-table-map: ESE_ESTATES.ESE_ESTATE_NUMBER
+        debtor:
+          description: >-
+
+          type: number
+          example: Bob Builder
+          x-table-map: ESE_ESTATES.ESE_CTT_ID_DEBTOR
+        estateType:
+          description: >-
+
+          type: string
+          enum:
+            - Creditor Petition
+            - Debtor Petition
+            - No Asset Procedure
+            - Partnership
+            - Insolvent Deceased Estate
+            - Summary Installment Order
+            - Bankrupt Agency
+            - Reciever Manager (Bankrupt)
+            - Voluntary Administration
+            - Interim Liquidation
+            - Liquidation Agency
+            - Proceeds of Crime
+            - POC Agency
+          example: Creditor Petition
+          x-table-map: ESE_ESTATES.ESE_EST_ID
+        estateName:
+          description: >-
+
+          type: string
+          example: JIMMERS, Jim
+          x-table-map: ESE_ESTATES.ESE_ESTATE_NAME
+        subTypeCode:
+          x-uuid: 788dcc17-b16e-438a-b9bc-6dc7748dfe09
+          description: >-
+
+          type: string
+          enum:
+              - Non-Complex
+              - Complex
+              - Consumer
+          example: COS
+          x-table-map: ESE_ESTATES.ESE_SUB_TYPE_CODE
+        adjudicationAddress:
+          description: >-
+              Address at the time the insolvency was adjudicated
+          type: string
+          example: 1 Evergreen Terrace, Springfield 2005, New Zealand
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_ADJUDICATION_ADDRESS
+        estateCategoryCode:
+          x-uuid: 43e0a3aa-6362-4d35-9036-4fb7f5f37873
+          description: >-
+                Bankrputcy
+                Liquidation
+                Proceeds of crime
+
+                To be removed.
+          type: string
+          enum:
+              - B
+              - L
+              - P
+          example: B
+          x-table-map: ESE_ESTATES.ESE_ECAT_CODE
+        statementServicePerformanceStatusCode:
+          x-uuid: fe2bed5d-125d-41fd-b62a-886b05e327ec
+          description: >-
+
+                Statement of service perfromance code - reported back to Treasury.
+          type: string
+          enum:
+            - Rejected
+            - Error
+            - Re-Opened
+            - Open
+            - Pending
+            - Closed
+            - Monitored
+          example: OPN
+          x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CODE
+        ringfenceTypeCode:
+          x-uuid: 2c2c3114-c85c-422a-ae71-452581d19c78
+          description: >-
+              The security segment / virtual tenancy that the estate sits in.
+          type: string
+          enum:
+                - ITS
+                - POC
+          example: ITS
+          x-table-map: ESE_ESTATES.ESE_RINGFENCE_TYPE_CODE
+        statementServicePerformanceStatusClosedBy:
+          x-uuid: 81d899e3-5547-4ed5-b49f-c2afbec9a84c
+          description: >-
+                Audit data - Statement of service performanace
+          type: string
+          example: BOBB
+          x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_BY
+        teamMemberOfficer:
+          x-uuid: 34a996c5-cc62-4b94-80f6-e59e453cb433
+          description: >-
+                Team member
+          type: string
+          example: SAMP
+          x-table-map: ESE_ESTATES.ESE_TMR_OFFICER_ID
+        teamMemberOtherOfficer:
+          x-uuid: d0d4af6d-8a0b-4a49-a617-ba63ec4ef41d
+          description: >-
+              Team member - case manager
+
+              Potentially an estate may be administerted by a secondary officer as a point of contact for the estate.
+          type: number
+          example: TAVISHF
+          x-table-map: ESE_ESTATES.ESE_TMR_OTH_OFFICER_ID
+        teamMemberCaseMgr:
+          x-uuid: 95648ac1-cbf6-4054-9258-1c7daba418b7
+          description: >-
+              Team member - case manager
+          type: number
+          example: JENNYH
+          x-table-map: ESE_ESTATES.ESE_TMR_CASE_MGR_ID
+        statementServicePerformanceStatusClosedByName:
+          x-uuid: 8408a916-90d6-43b1-a381-8a8ca46e8127
+          description: >-
+              Audit data
+          type: string
+          example: Bob Builder
+          x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_BY_NAME
+        statementServicePerformanceStatusClosedDate:
+          x-uuid: 5f50944f-46b3-4219-ac19-b4239b8ce487
+          description: >-
+              Audit data
+          type: string
+          example: 9/9/2015
+          x-table-map: ESE_ESTATES.ESE_SSP_STATUS_CLOSED_DATE
+        currentCharge:
+          description: >-
+              To be removed. Was to do with recoveries. Have other fields and methods for dealing with this now
+              in a more precise manner.
+          type: number
+          example: 141.18
+          x-table-map: ESE_ESTATES.ESE_CURRENT_CHARGE
+        monitoredByCode:
+          x-uuid: a97d7b95-a0ce-4c89-a919-edf2e6f88149
+          description: >-
+                If SSP status is monitored, the party responsible for the monitoring, facilitated via tasks.
+
+          type: string
+          enum:
+            - NRG
+            - MGR
+            - OFR
+          example: OFR
+          x-table-map: ESE_ESTATES.ESE_MONITORED_BY_CODE
+        monitoringCategory:
+          description: >-
+                 If SSP status is monitored, the classification or type of the monitoring.
+          type: string
+          enum:
+              - CON
+              - THP
+              - REC
+              - OTH
+              - LEG
+          example: THP
+          x-table-map: ESE_ESTATES.ESE_MONITORING_CATEGORY
+        monitoringNotes:
+          description: >-
+            Notes related to estate monitoring.
+          type: string
+          example: funds of >$1k per month being received until March 2011.
+          maxLength: 4000
+          x-table-map: ESE_ESTATES.ESE_MONITORING_NOTES
+        publicSearchSuppress:
+          x-uuid: 0f8e6ad0-de92-4089-ba6a-f7f12aaab02c
+          description: >-
+              Boolean indicating if the record needs to be suppressed from public search (on the register).
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_PUBLIC_SEARCH_SUPPRESS_YN
+        highProfile:
+          description: >-
+            Flag to indicate the estate is a high profile estate, implicitly meaning that discretion and caution are required
+            in all dealings related to it.
+          type: string
+          example: true
+          x-table-map: ESE_ESTATES.ESE_HIGH_PROFILE_YN
+        itsContact:
+          description: >-
+            Special contact for this estate, if applicable - usually due to hgh profile and or high risk.
+          type: string
+          maxLength: 150
+          example: All media contact to Les Currie Hamilton Office
+          x-table-map: ESE_ESTATES.ESE_ITS_CONTACT
+        contactRestrictionCode:
+          x-uuid: b79227a2-e2d3-47b1-90fb-2f43572ed8c9
+          description: >-
+
+          type: string
+          example: UNR
+          x-table-map: ESE_ESTATES.ESE_CONTACT_RESTRICTION_CODE
+        restrictionDetails:
+          description: >-
+              Free test reason explaining the specific nature of the restriction on contact.
+          type: string
+          example: only contact is allowed to david harte OA auckland 099164563 - file note on online expalining why
+          x-table-map: ESE_ESTATES.ESE_RESTRICTION_DETAILS
+        riskIssues:
+          description: >-
+              Flag indicating if there are unusual risks associated to this estate
+          type: boolean
+          example: true
+          x-table-map: ESE_ESTATES.ESE_RISK_ISSUES_YN
+          x-ui-map:
+        issueDetails:
+          description: >-
+              Free text description of risk(s).
+          type: string
+          example: Gang affiliations with Hastings Chapter of Highway 61 motorcycle gang.
+          x-table-map: ESE_ESTATES.ESE_ISSUE_DETAILS
+        adjudicationDate:
+          description: >-
+              Date adjudicated
+          type: string
+          format: date
+          example: 07/08/69
+          x-table-map: ESE_ESTATES.ESE_ADJUDICATION_DATE_TIME
+        courtNumber:
+          description: >-
+            Courts case number
+          type: string
+          example: CIV-2009-404-004272
+          x-table-map: ESE_ESTATES.ESE_COURT_NUMBER
